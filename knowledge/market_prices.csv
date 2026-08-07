@@ -1,0 +1,501 @@
+State,District,Market,Crop,Variety,Arrival_Tonnes,Modal_Price,Min_Price,Max_Price,Price_Trend,Demand,Supply,Quality,MSP_Available,Export_Demand,Storage_Available,Season,Weather_Impact,Transport_Cost_Per_Tonne,Distance_From_Farm_KM,Market_Rating,Best_Time_To_Sell,Expected_Price_7_Days,Expected_Price_30_Days,Last_Updated
+Telangana,Warangal,Lasalgaon,Onion,White Onion,2336,2320,1774,2769,Stable,Low,High,Premium,Yes,Low,Yes,Rabi,Heatwave,4439,313,3.1,Within 3 Days,2340,2366,2026-07-27
+Punjab,Gurdaspur,Ahmedabad,Onion,Red Onion,11488,1681,1534,1968,Rising,Medium,Medium,Premium,No,Medium,Yes,Zaid,Heatwave,3117,314,3.5,Today,1788,1855,2026-07-27
+Karnataka,Shivamogga,Solapur,Banana,Nendran,11593,3190,2549,3513,Rising,High,High,Premium,Yes,Low,No,Zaid,Heatwave,4014,330,4.7,Within 3 Days,3324,3416,2026-07-29
+Odisha,Cuttack,Jaipur,Soybean,Co-1,4060,4266,3698,4860,Falling,High,Medium,Good,Yes,Medium,Yes,Kharif,Cold Wave,2884,210,3.5,Within 3 Days,4158,3868,2026-07-28
+Punjab,Gurdaspur,Ludhiana,Turmeric,Salem Turmeric,2337,5788,5076,6920,Stable,High,Low,Average,No,Low,No,Rabi,Normal,1433,265,4.0,Today,5871,5587,2026-07-31
+Bihar,Arrah,Jaipur,Maize,DMH-1,2490,1959,1783,2475,Stable,Medium,Low,Premium,No,Medium,No,Kharif,Flood,2704,227,3.3,Today,1994,2032,2026-07-29
+Tamil Nadu,Coimbatore,Kurnool,Cotton,NHH-44,10518,5173,4550,6340,Rising,Low,Low,Average,Yes,High,No,Perennial,Normal,459,62,4.9,Next Week,5350,5556,2026-07-24
+Karnataka,Belagavi,Patna,Groundnut,TL-001,3186,5227,4066,6389,Falling,High,High,Average,No,Low,Yes,Rabi,Drought,2853,209,5.0,Within 10 Days,4925,4913,2026-07-26
+Karnataka,Dharwad,Nagpur,Maize,Yellow Maize,2459,693,528,866,Rising,Low,High,Premium,Yes,Low,Yes,Zaid,Heavy Rain,880,268,3.5,Within 10 Days,727,765,2026-07-24
+Andhra Pradesh,Prakasam,Nagpur,Groundnut,TAG-24,1595,5735,4702,7531,Falling,High,Low,Premium,Yes,Medium,Yes,Perennial,Heatwave,3079,60,3.5,Within 3 Days,5460,4955,2026-07-31
+Haryana,Kaithal,Nagpur,Maize,DMH-1,451,1258,1141,1646,Rising,High,Low,Premium,No,Low,No,Perennial,Drought,2051,210,4.8,Within 3 Days,1311,1444,2026-07-29
+Chhattisgarh,Jagdalpur,Solapur,Grapes,Cheema Saheb,9155,2783,2227,3733,Rising,Low,Low,Average,Yes,Medium,No,Kharif,Cold Wave,710,304,4.0,Hold for 30 Days,2864,3189,2026-08-01
+West Bengal,Durgapur,Pune,Maize,Vivek Hybrid,6665,2097,1586,2311,Stable,High,Low,Average,No,High,No,Rabi,Heatwave,2873,127,3.5,Within 3 Days,2111,2055,2026-07-28
+Chhattisgarh,Bhilai,Lasalgaon,Turmeric,Rajapur Turmeric,459,6380,4928,7491,Stable,High,Low,Premium,Yes,High,No,Zaid,Drought,1592,229,4.7,Within 10 Days,6329,6688,2026-07-23
+Tamil Nadu,Salem,Chennai,Pulses,Urad Dal,1747,10159,7887,11744,Rising,High,Medium,Premium,No,High,Yes,Zaid,Cold Wave,4440,255,3.5,Today,10418,11097,2026-07-29
+Maharashtra,Nashik,Indore,Sugarcane,Co-13006,2697,330,278,366,Stable,Low,Medium,Average,Yes,Low,Yes,Zaid,Normal,4826,80,3.9,Today,327,343,2026-08-02
+Chhattisgarh,Rajnandgaon,Belagavi,Potato,Kufri Chipsona,1498,778,705,889,Stable,Low,Medium,Premium,Yes,Low,No,Kharif,Heavy Rain,1769,382,4.8,Hold for 15 Days,787,806,2026-07-30
+Haryana,Hisar,Varanasi,Cotton,PKV Rajat,3566,4881,3913,6319,Falling,Medium,High,Premium,Yes,High,Yes,Rabi,Heavy Rain,3564,173,3.6,Today,4773,4285,2026-07-23
+Tamil Nadu,Erode,Chennai,Pulses,Urad Dal,522,3431,2636,4108,Falling,Medium,High,Average,No,Low,No,Kharif,Heavy Rain,3455,300,3.4,Today,3302,2916,2026-07-25
+Telangana,Karimnagar,Kota,Grapes,Thompson Grapes,5459,4375,3950,5324,Rising,Low,Medium,Average,No,Low,No,Perennial,Cold Wave,2722,288,3.3,Hold for 15 Days,4637,4759,2026-07-31
+Andhra Pradesh,East Godavari,Solapur,Mango,Kesar Mango,1294,4485,3862,5406,Stable,Medium,High,Good,Yes,Medium,No,Rabi,Heavy Rain,994,150,4.0,Within 10 Days,4506,4302,2026-07-30
+Telangana,Khammam,Nagpur,Tomato,Deshi Tomato,239,3524,2891,4405,Rising,High,Medium,Premium,No,Low,No,Perennial,Heavy Rain,2298,80,4.3,Today,3783,4003,2026-08-01
+Bihar,Arrah,Nagpur,Soybean,PK-416,1952,4638,3583,5590,Rising,High,Low,Average,No,High,No,Perennial,Drought,4788,233,4.8,Within 10 Days,4970,5078,2026-07-30
+West Bengal,Siliguri,Bhopal,Millet,Foxtail Millet,3969,1963,1550,2298,Stable,Medium,Medium,Average,Yes,High,Yes,Rabi,Cold Wave,2194,201,4.4,Within 10 Days,1940,1946,2026-07-28
+Tamil Nadu,Vellore,Karnal,Wheat,Sharbati Wheat,1645,3864,3211,5156,Stable,Low,Low,Good,No,High,No,Rabi,Flood,4299,117,3.5,Hold for 15 Days,3791,3800,2026-07-23
+Bihar,Arrah,Patna,Soybean,Pusa Bold,10245,2718,2344,2997,Stable,Low,High,Good,Yes,Medium,No,Rabi,Heatwave,711,138,3.8,Within 3 Days,2713,2673,2026-07-27
+Haryana,Jind,Sangli,Maize,DMH-1,3118,1197,911,1602,Rising,Low,High,Premium,Yes,Medium,Yes,Rabi,Heavy Rain,466,323,3.3,Within 3 Days,1254,1270,2026-07-30
+Rajasthan,Udaipur,Bhopal,Banana,Robusta,2537,3572,2867,4415,Rising,Low,Low,Good,No,High,No,Rabi,Drought,922,308,4.4,Within 10 Days,3695,3999,2026-07-29
+West Bengal,Jalpaiguri,Varanasi,Cotton,Bunny Bt,1472,3214,2686,3767,Falling,Low,Medium,Good,No,Low,Yes,Perennial,Heavy Rain,3267,330,4.8,Hold for 15 Days,3093,2871,2026-07-25
+Telangana,Khammam,Jaipur,Pulses,Masoor Dal,1834,5152,4591,5684,Falling,Low,Low,Good,Yes,Medium,No,Perennial,Flood,3055,19,4.0,Next Week,4796,4488,2026-07-29
+Uttar Pradesh,Prayagraj,Visakhapatnam,Onion,Ratnagiri Red,2166,2803,2335,3601,Stable,High,High,Average,No,High,No,Perennial,Heavy Rain,441,52,3.6,Hold for 15 Days,2824,2748,2026-07-24
+Uttar Pradesh,Ghaziabad,Hyderabad,Millet,Ragi Millet,3105,1809,1440,2076,Stable,Low,Medium,Premium,Yes,Medium,No,Kharif,Flood,4689,395,4.4,Within 3 Days,1788,1806,2026-07-24
+Bihar,Katihar,Jaipur,Garlic,Large Bulb Garlic,4903,4572,3979,5094,Falling,High,Medium,Premium,Yes,High,No,Rabi,Heatwave,4321,57,4.7,Hold for 30 Days,4284,4105,2026-07-28
+Gujarat,Ahmedabad,Sangli,Groundnut,TL-001,1691,2717,2107,3529,Stable,Medium,High,Good,Yes,Low,Yes,Kharif,Heavy Rain,4871,396,3.8,Hold for 30 Days,2748,2642,2026-07-25
+Madhya Pradesh,Dewas,Warangal,Turmeric,Erode Turmeric,1806,6596,6023,7300,Rising,Medium,Low,Premium,Yes,Low,No,Kharif,Drought,1586,127,3.3,Today,6789,7195,2026-07-24
+Rajasthan,Udaipur,Azadpur,Potato,Kufri Bahar,4682,1007,913,1301,Stable,Low,Medium,Average,Yes,High,No,Kharif,Cold Wave,4761,120,4.3,Next Week,1020,963,2026-07-31
+Bihar,Darbhanga,Jaipur,Garlic,G-282,1969,4870,4066,5908,Falling,Low,Medium,Premium,Yes,Low,No,Zaid,Heavy Rain,2351,18,3.2,Within 10 Days,4724,4419,2026-08-02
+Bihar,Darbhanga,Ahmedabad,Wheat,Sharbati Wheat,2175,3387,2905,4107,Rising,Low,Medium,Premium,No,Medium,No,Perennial,Flood,3030,169,4.3,Within 3 Days,3521,3791,2026-07-29
+Telangana,Nalgonda,Lucknow,Pulses,Toor Dal,410,6811,6109,8872,Rising,Medium,Medium,Premium,No,Medium,No,Kharif,Flood,1836,270,3.7,Hold for 15 Days,7202,7669,2026-07-30
+Haryana,Panipat,Kolhapur,Garlic,G-282,7991,5650,4919,6576,Stable,High,High,Premium,No,Low,Yes,Rabi,Cold Wave,1229,241,4.9,Within 10 Days,5725,5649,2026-07-29
+Tamil Nadu,Tiruchirappalli,Karnal,Groundnut,TAG-24,7533,3733,3273,4169,Rising,Low,High,Premium,No,Medium,No,Zaid,Heatwave,4459,141,4.6,Next Week,3970,4232,2026-07-24
+Telangana,Adilabad,Coimbatore,Sugarcane,Co-15018,2033,376,311,438,Stable,Medium,Medium,Premium,Yes,Low,No,Rabi,Drought,3665,27,3.6,Hold for 15 Days,379,387,2026-07-27
+Telangana,Nizamabad,Guntur,Wheat,Sharbati Wheat,2467,3918,3544,4247,Rising,Medium,High,Premium,No,Medium,Yes,Kharif,Drought,4146,140,3.7,Within 10 Days,4089,4145,2026-07-28
+West Bengal,Burdwan,Ludhiana,Chilli,Teja Chilli,8044,3612,3096,4799,Rising,Low,High,Premium,Yes,Low,No,Kharif,Cold Wave,1123,232,3.3,Next Week,3880,3809,2026-08-02
+Haryana,Fatehabad,Kota,Grapes,Sonaka Grapes,8752,3185,2483,3963,Rising,Medium,Low,Good,Yes,Low,No,Rabi,Heatwave,2202,241,4.3,Hold for 15 Days,3297,3347,2026-07-26
+Chhattisgarh,Durg,Chennai,Pulses,Moong Dal,1859,7672,6654,9232,Stable,Medium,Low,Good,Yes,Medium,No,Perennial,Heavy Rain,1173,126,3.8,Next Week,7694,8049,2026-07-29
+Maharashtra,Ahmednagar,Sangli,Rice,Swarna Rice,853,4653,4121,5787,Falling,Low,Low,Good,Yes,Medium,Yes,Zaid,Cold Wave,1420,326,3.2,Within 10 Days,4461,4098,2026-07-26
+Maharashtra,Latur,Kota,Sugarcane,Co-86032 Sugarcane,5402,292,258,384,Rising,Low,Medium,Good,No,High,Yes,Zaid,Normal,4247,156,4.5,Next Week,311,320,2026-08-01
+Gujarat,Junagadh,Coimbatore,Mango,Kesar Mango,1529,2705,2237,3412,Stable,Medium,High,Average,No,Medium,No,Zaid,Normal,1187,350,3.5,Today,2717,2824,2026-07-28
+Chhattisgarh,Dhamtari,Nagpur,Maize,Vivek Hybrid,3774,866,670,1156,Falling,Low,Medium,Good,No,Low,Yes,Kharif,Flood,2223,280,3.3,Hold for 15 Days,815,818,2026-07-25
+Madhya Pradesh,Ratlam,Patna,Sugarcane,Co-15018,1672,316,274,359,Falling,Medium,Low,Good,Yes,Medium,No,Kharif,Cold Wave,3309,283,4.8,Within 10 Days,297,281,2026-07-30
+Karnataka,Hassan,Pune,Tomato,Arka Saurabh,9833,1774,1567,2014,Rising,High,High,Average,Yes,Medium,Yes,Rabi,Cold Wave,2991,80,4.6,Hold for 30 Days,1809,2014,2026-07-31
+Gujarat,Mehsana,Sangli,Soybean,Non-GMO Soybean,472,3730,3002,4203,Rising,High,High,Premium,Yes,Medium,No,Kharif,Cold Wave,820,248,3.9,Next Week,3919,3957,2026-07-25
+Punjab,Moga,Azadpur,Millet,Ragi Millet,2685,2144,1858,2599,Falling,High,High,Good,Yes,Medium,Yes,Zaid,Flood,1515,38,3.3,Hold for 30 Days,2053,1939,2026-07-28
+Madhya Pradesh,Ratlam,Kurnool,Garlic,G-282,2529,7214,6294,8209,Rising,Medium,High,Good,Yes,Low,No,Zaid,Drought,4015,209,3.8,Today,7493,7800,2026-07-29
+Uttar Pradesh,Lucknow,Chennai,Groundnut,TL-001,3456,4476,3974,5506,Rising,High,High,Average,No,Medium,Yes,Perennial,Heavy Rain,3196,345,4.9,Hold for 15 Days,4798,5022,2026-07-29
+Andhra Pradesh,Tirupati,Kota,Cotton,Bunny Bt,921,4987,4037,6134,Rising,High,Low,Premium,No,Medium,Yes,Perennial,Drought,4895,397,4.6,Hold for 30 Days,5288,5513,2026-07-24
+Chhattisgarh,Durg,Lasalgaon,Soybean,MAUS-61,5112,4599,3561,5783,Rising,Medium,Medium,Premium,Yes,High,Yes,Kharif,Cold Wave,4645,115,3.8,Hold for 15 Days,4785,4999,2026-07-28
+Bihar,Munger,Jaipur,Maize,Hybrid Maize,2629,900,742,1075,Rising,Low,High,Average,No,Low,No,Zaid,Heatwave,2065,391,4.0,Next Week,941,970,2026-07-23
+Andhra Pradesh,Prakasam,Kurnool,Garlic,Large Bulb Garlic,6525,5021,4572,6462,Rising,Low,High,Good,No,High,No,Kharif,Heatwave,363,259,4.5,Within 3 Days,5160,5539,2026-07-30
+Tamil Nadu,Thoothukudi,Lucknow,Banana,Grand Naine,3579,1866,1691,2449,Rising,Low,High,Average,No,Medium,No,Perennial,Flood,2671,63,3.8,Next Week,1922,2136,2026-07-26
+West Bengal,Malda,Pune,Grapes,Thompson Grapes,7188,3247,2915,4160,Rising,Low,Medium,Premium,No,Low,Yes,Kharif,Heatwave,4481,329,3.2,Hold for 30 Days,3349,3661,2026-07-28
+Odisha,Rourkela,Nagpur,Cotton,Bt Cotton,3282,5297,4132,6826,Stable,High,Low,Good,No,High,No,Zaid,Normal,2889,82,3.9,Hold for 15 Days,5284,5192,2026-07-29
+Andhra Pradesh,Guntur,Kota,Millet,Bajra Millet,7615,1768,1349,2321,Falling,Medium,High,Premium,No,High,No,Kharif,Normal,3984,297,4.3,Next Week,1690,1591,2026-08-02
+Rajasthan,Kota,Varanasi,Chilli,Teja Chilli,2116,5373,4934,6563,Rising,Low,High,Average,Yes,High,No,Zaid,Heavy Rain,2617,203,3.8,Next Week,5699,5669,2026-07-23
+Telangana,Mahabubnagar,Pune,Chilli,Guntur Chilli,2828,4031,3251,4987,Stable,Medium,Medium,Premium,No,Medium,No,Perennial,Drought,1356,309,4.4,Today,4000,3981,2026-07-28
+West Bengal,Durgapur,Chennai,Millet,Bajra Millet,11034,2136,1714,2855,Rising,Medium,Low,Good,No,Medium,Yes,Rabi,Cold Wave,1426,84,3.2,Today,2243,2358,2026-07-25
+Maharashtra,Solapur,Visakhapatnam,Sugarcane,Co-16013,681,333,290,363,Stable,High,High,Good,Yes,Low,No,Zaid,Flood,3977,124,4.1,Next Week,339,342,2026-07-30
+Uttar Pradesh,Moradabad,Salem,Turmeric,Erode Turmeric,2109,6339,5405,8340,Rising,Low,Medium,Premium,No,High,No,Kharif,Flood,4526,68,3.6,Within 3 Days,6569,7229,2026-07-31
+West Bengal,Kharagpur,Pune,Potato,Chandrakhi,486,1228,970,1655,Stable,Medium,High,Good,Yes,Medium,Yes,Zaid,Normal,1111,370,4.3,Within 3 Days,1210,1201,2026-07-26
+Odisha,Rourkela,Bhopal,Groundnut,TAG-24,71,3530,2976,4505,Rising,High,High,Average,No,Medium,Yes,Zaid,Drought,2246,159,3.2,Within 3 Days,3689,3986,2026-07-26
+Karnataka,Belagavi,Lucknow,Groundnut,T-64,117,3166,2531,3420,Rising,Low,Low,Good,Yes,Low,No,Rabi,Drought,1001,273,4.9,Today,3410,3496,2026-07-25
+Tamil Nadu,Salem,Ludhiana,Groundnut,TL-001,6388,4262,3767,4999,Rising,Medium,Medium,Average,Yes,Low,No,Rabi,Cold Wave,663,185,4.1,Within 10 Days,4392,4807,2026-07-26
+Odisha,Baripada,Mysuru,Soybean,JS-335,2982,2240,1981,2954,Rising,Medium,High,Good,No,Medium,No,Perennial,Heavy Rain,2375,23,4.5,Within 3 Days,2323,2545,2026-08-02
+West Bengal,Malda,Sangli,Cotton,Surabhi,3693,5376,4921,6526,Falling,Medium,Low,Good,No,Medium,No,Kharif,Flood,3777,45,3.9,Within 3 Days,5121,4742,2026-08-01
+Uttar Pradesh,Prayagraj,Solapur,Turmeric,Rajapur Turmeric,7031,6743,5105,8866,Falling,High,Low,Good,No,Medium,No,Kharif,Cold Wave,914,348,4.3,Next Week,6411,6237,2026-07-31
+Maharashtra,Kolhapur,Coimbatore,Turmeric,High Curcumin Turmeric,1151,6410,5842,6978,Falling,High,Low,Premium,No,Medium,No,Zaid,Heatwave,3936,395,3.2,Within 3 Days,6100,5703,2026-07-23
+Haryana,Rohtak,Nashik,Rice,MTU-1010,8226,2441,2152,3100,Rising,Low,Medium,Premium,No,Low,No,Rabi,Heatwave,1304,74,4.7,Hold for 15 Days,2515,2737,2026-08-01
+Bihar,Purnia,Chennai,Banana,Dwarf Cavendish,2302,2513,2187,3189,Rising,Low,Medium,Premium,No,Medium,Yes,Kharif,Heavy Rain,1946,76,3.5,Hold for 15 Days,2567,2777,2026-07-28
+Rajasthan,Sikar,Kolhapur,Maize,Hybrid Maize,6573,1234,1086,1607,Stable,Low,Low,Premium,Yes,Medium,No,Kharif,Normal,3986,243,4.4,Next Week,1215,1274,2026-07-25
+Telangana,Rangareddy,Hubli,Sugarcane,Co-15018,3780,369,287,430,Rising,High,High,Average,Yes,Low,No,Zaid,Drought,946,133,3.4,Hold for 30 Days,382,410,2026-07-24
+Tamil Nadu,Chennai,Kurnool,Soybean,Co-1,681,4602,3715,6118,Stable,High,Low,Premium,Yes,Low,Yes,Kharif,Drought,2468,338,3.4,Hold for 30 Days,4586,4665,2026-07-26
+Chhattisgarh,Ambikapur,Solapur,Garlic,G-282,11272,3990,3099,4756,Rising,Medium,Medium,Good,Yes,Medium,No,Rabi,Heatwave,2860,372,3.6,Next Week,4303,4241,2026-07-28
+Tamil Nadu,Thoothukudi,Nashik,Chilli,Byadgi Chilli,551,3952,2997,5276,Rising,Medium,Medium,Average,No,High,Yes,Rabi,Flood,2982,300,4.4,Within 3 Days,4211,4346,2026-07-25
+Rajasthan,Alwar,Visakhapatnam,Garlic,G-282,418,5788,4914,6327,Rising,Medium,Low,Good,No,Medium,No,Zaid,Heavy Rain,4696,9,4.7,Hold for 15 Days,5950,6230,2026-07-28
+Bihar,Arrah,Kota,Wheat,PBW-343,2385,2586,1971,3144,Stable,Low,High,Average,No,Medium,Yes,Rabi,Heavy Rain,1092,206,3.7,Next Week,2591,2551,2026-07-31
+Punjab,Moga,Kurnool,Mango,Kesar Mango,235,5994,4978,7213,Falling,High,High,Average,Yes,Low,No,Zaid,Heavy Rain,1631,206,5.0,Within 10 Days,5817,5450,2026-07-25
+West Bengal,Burdwan,Hyderabad,Groundnut,Phule Pragati,1277,2923,2679,3617,Falling,Medium,High,Average,Yes,Medium,No,Zaid,Drought,2164,374,3.1,Hold for 15 Days,2719,2668,2026-07-24
+Bihar,Arrah,Kolhapur,Potato,Kufri Jyoti,3933,1263,1014,1415,Rising,Low,High,Average,Yes,High,No,Perennial,Drought,810,366,3.3,Within 3 Days,1330,1452,2026-07-26
+Tamil Nadu,Erode,Indore,Soybean,Pusa Bold,1452,3224,2770,4085,Stable,Low,Medium,Average,No,Low,Yes,Rabi,Drought,2585,290,3.6,Next Week,3258,3290,2026-07-26
+Uttar Pradesh,Ghaziabad,Kota,Pulses,Rajma,4765,8361,7543,9920,Stable,High,Low,Good,Yes,Low,No,Kharif,Normal,2656,370,3.2,Hold for 15 Days,8413,8567,2026-07-30
+Punjab,Firozpur,Sangli,Pulses,Rajma,2299,6905,5463,8706,Stable,High,Low,Average,Yes,Low,Yes,Kharif,Normal,1120,216,3.7,Hold for 15 Days,6794,7091,2026-08-02
+Tamil Nadu,Coimbatore,Karnal,Groundnut,TAG-24,3317,3042,2751,3358,Stable,Medium,Medium,Average,Yes,Medium,Yes,Rabi,Cold Wave,3723,95,4.9,Today,3102,3010,2026-07-26
+Gujarat,Amreli,Visakhapatnam,Wheat,Basmati Wheat,9355,3105,2850,3808,Falling,Low,High,Good,Yes,Medium,No,Zaid,Normal,1879,62,3.7,Within 10 Days,2942,2719,2026-07-31
+Maharashtra,Solapur,Varanasi,Garlic,G-4,3214,8858,7419,9774,Falling,High,Low,Average,Yes,Low,Yes,Rabi,Cold Wave,4211,170,4.9,Today,8287,7737,2026-07-29
+Uttar Pradesh,Prayagraj,Ahmedabad,Rice,Sona Masuri,5940,1920,1591,2156,Stable,Low,High,Average,No,High,Yes,Zaid,Cold Wave,3310,319,3.4,Within 3 Days,1918,1911,2026-07-24
+Uttar Pradesh,Meerut,Kolkata,Pulses,Masoor Dal,3334,7051,6334,7770,Stable,Low,High,Good,No,High,Yes,Kharif,Drought,805,285,4.8,Within 3 Days,7071,6804,2026-07-28
+West Bengal,Burdwan,Salem,Cotton,NHH-44,11795,4977,4416,5984,Stable,Low,Medium,Average,No,High,No,Kharif,Heatwave,4877,241,4.3,Next Week,5021,4925,2026-08-02
+Odisha,Berhampur,Ahmedabad,Maize,Hybrid Maize,1461,741,679,894,Rising,Low,High,Good,No,Low,Yes,Rabi,Flood,3743,196,5.0,Hold for 15 Days,775,846,2026-07-27
+Madhya Pradesh,Kota,Chennai,Pulses,Moong Dal,5747,8105,6254,10895,Falling,High,High,Premium,Yes,Low,No,Perennial,Cold Wave,4760,222,4.1,Within 3 Days,7576,7169,2026-07-29
+Punjab,Fatehgarh Sahib,Azadpur,Grapes,Flame Seedless,1035,2659,2196,3354,Stable,High,High,Premium,Yes,High,Yes,Perennial,Heavy Rain,3895,124,4.1,Today,2620,2790,2026-07-30
+West Bengal,Jalpaiguri,Indore,Chilli,Byadgi Chilli,2397,5409,4309,6654,Falling,Low,Low,Average,Yes,High,No,Perennial,Normal,684,181,4.9,Within 10 Days,5099,4881,2026-07-27
+Madhya Pradesh,Bhopal,Solapur,Mango,Langra Mango,1989,3198,2836,4243,Stable,High,High,Average,No,Medium,No,Rabi,Drought,3481,129,3.5,Next Week,3216,3333,2026-07-28
+Karnataka,Shivamogga,Patna,Tomato,Hybrid Tomato,6229,1400,1094,1799,Rising,Low,Low,Average,Yes,Low,No,Rabi,Normal,3027,160,4.9,Today,1445,1496,2026-08-01
+Odisha,Baripada,Warangal,Potato,Kufri Chipsona,2932,1590,1402,1880,Stable,High,Medium,Average,No,High,No,Zaid,Drought,3246,267,4.8,Hold for 15 Days,1564,1666,2026-07-26
+Bihar,Purnia,Warangal,Tomato,Cherry Tomato,6831,2499,1881,3072,Stable,High,Low,Average,No,High,No,Rabi,Normal,1907,173,3.5,Hold for 30 Days,2532,2498,2026-07-23
+Telangana,Mahabubnagar,Sangli,Groundnut,Phule Pragati,8087,3143,2432,3858,Falling,Medium,High,Premium,Yes,Low,Yes,Kharif,Cold Wave,697,396,3.0,Within 3 Days,3050,2744,2026-07-31
+Maharashtra,Nagpur,Kurnool,Turmeric,Erode Turmeric,2580,5797,4828,6271,Falling,Low,Low,Average,No,Low,Yes,Kharif,Heavy Rain,4636,374,3.5,Next Week,5339,5398,2026-07-23
+Madhya Pradesh,Bhopal,Nashik,Cotton,Bunny Bt,3998,6262,4981,7434,Falling,High,Low,Good,No,Low,No,Rabi,Heatwave,2150,158,4.4,Today,6006,5860,2026-08-02
+Karnataka,Mandya,Ludhiana,Mango,Kesar Mango,279,2170,1811,2597,Rising,Low,High,Good,Yes,Low,Yes,Rabi,Flood,2031,359,4.8,Hold for 15 Days,2248,2479,2026-07-23
+Chhattisgarh,Durg,Visakhapatnam,Pulses,Chana Dal,589,10509,8139,13678,Rising,High,Medium,Good,Yes,High,No,Rabi,Cold Wave,4919,128,4.1,Hold for 15 Days,11146,11602,2026-07-27
+Bihar,Bhagalpur,Varanasi,Maize,HQPM-1,5716,1818,1386,2260,Rising,High,High,Average,No,Medium,No,Kharif,Cold Wave,2539,235,4.0,Next Week,1914,1977,2026-07-31
+Telangana,Rangareddy,Chennai,Mango,Alphonso Mango,1259,5003,3883,6364,Rising,High,Low,Average,Yes,High,No,Zaid,Drought,3254,59,3.2,Next Week,5236,5634,2026-08-01
+Gujarat,Surendranagar,Hubli,Grapes,Manik Chaman,2322,2399,1943,2651,Rising,Low,Medium,Average,No,High,No,Kharif,Drought,2690,216,3.8,Today,2551,2653,2026-07-30
+Andhra Pradesh,Nellore,Hubli,Mango,Langra Mango,4455,2759,2147,3185,Rising,Medium,Medium,Good,No,Medium,Yes,Zaid,Heatwave,2361,131,4.4,Hold for 15 Days,2912,2950,2026-08-01
+Gujarat,Amreli,Lasalgaon,Mango,Dasheri Mango,1606,5840,5197,7333,Falling,Medium,Medium,Average,Yes,Medium,No,Zaid,Drought,1945,250,3.6,Hold for 15 Days,5712,5134,2026-07-23
+Rajasthan,Pali,Varanasi,Potato,Kufri Bahar,1198,1109,943,1361,Stable,Medium,Medium,Average,Yes,High,No,Rabi,Flood,3891,154,4.7,Today,1123,1141,2026-07-27
+Telangana,Adilabad,Kolhapur,Garlic,Yamuna Safed-3,10841,5192,4290,6445,Falling,High,Low,Average,No,Medium,No,Kharif,Normal,3245,364,4.8,Hold for 30 Days,4961,4887,2026-08-01
+Bihar,Muzaffarpur,Chennai,Banana,Robusta,10088,3571,2920,4582,Stable,High,Low,Good,Yes,Low,Yes,Kharif,Cold Wave,2419,118,4.0,Hold for 30 Days,3579,3638,2026-07-30
+Rajasthan,Ajmer,Ludhiana,Turmeric,Nanded Turmeric,2878,4189,3216,4994,Rising,Low,High,Premium,Yes,Medium,Yes,Zaid,Drought,2855,180,3.9,Within 3 Days,4403,4544,2026-08-01
+Rajasthan,Alwar,Indore,Maize,Yellow Maize,3368,1314,1009,1702,Falling,Low,High,Average,Yes,High,Yes,Rabi,Heavy Rain,3011,291,3.9,Hold for 15 Days,1227,1170,2026-07-31
+Gujarat,Gandhinagar,Ludhiana,Rice,MTU-1010,3667,3900,2927,4438,Falling,High,Medium,Good,Yes,Low,Yes,Rabi,Drought,3296,171,3.4,Today,3649,3651,2026-07-25
+Telangana,Mahabubnagar,Jaipur,Mango,Kesar Mango,2454,5782,4506,7296,Falling,High,Medium,Good,Yes,Medium,Yes,Zaid,Flood,1265,127,3.6,Within 3 Days,5448,4996,2026-07-27
+Madhya Pradesh,Ratlam,Kolhapur,Mango,Chausa Mango,8023,5901,5428,7257,Stable,Low,Low,Good,No,Low,Yes,Rabi,Heatwave,2877,235,4.2,Next Week,6007,5891,2026-07-30
+West Bengal,Kharagpur,Hyderabad,Millet,Kodo Millet,1725,1792,1492,1975,Stable,Low,Medium,Premium,Yes,Medium,No,Kharif,Flood,2551,120,4.1,Within 3 Days,1812,1803,2026-07-26
+Tamil Nadu,Thoothukudi,Nashik,Cotton,Surabhi,3422,6420,5411,8649,Stable,Medium,Low,Premium,Yes,High,No,Kharif,Drought,3984,139,3.7,Today,6404,6737,2026-07-30
+Punjab,Moga,Kolkata,Banana,Dwarf Cavendish,2641,2796,2195,3175,Rising,Medium,High,Premium,No,Low,No,Rabi,Drought,2951,365,3.6,Hold for 30 Days,2896,3175,2026-07-23
+West Bengal,Howrah,Kolhapur,Grapes,Thompson Grapes,10796,3892,3389,5073,Rising,High,Low,Average,No,High,No,Rabi,Normal,2501,326,3.8,Hold for 15 Days,3987,4395,2026-08-01
+Madhya Pradesh,Satna,Patna,Onion,Bellary Red,7499,1181,1032,1421,Rising,Medium,Medium,Average,No,Low,Yes,Perennial,Normal,2084,224,4.6,Hold for 15 Days,1223,1337,2026-07-28
+Tamil Nadu,Dindigul,Kolhapur,Groundnut,K-6,843,2965,2286,3888,Falling,High,High,Good,No,Low,Yes,Perennial,Cold Wave,1957,357,4.8,Within 10 Days,2781,2779,2026-07-29
+Karnataka,Bijapur,Sangli,Maize,Yellow Maize,10681,1253,1094,1608,Stable,High,High,Good,Yes,Medium,Yes,Kharif,Cold Wave,2048,249,3.2,Hold for 30 Days,1239,1275,2026-08-02
+Maharashtra,Solapur,Lucknow,Cotton,PKV Rajat,2215,3825,3343,4236,Falling,Medium,High,Good,No,High,No,Rabi,Cold Wave,3435,390,4.7,Within 10 Days,3746,3305,2026-07-25
+Andhra Pradesh,Guntur,Jaipur,Soybean,Pusa Bold,11886,4101,3505,4918,Rising,High,Low,Premium,Yes,Low,Yes,Rabi,Normal,1308,306,4.5,Next Week,4420,4435,2026-07-31
+Punjab,Patiala,Mysuru,Maize,White Maize,2511,1586,1443,1724,Falling,Low,Low,Average,No,Low,Yes,Rabi,Drought,3509,156,4.3,Within 3 Days,1506,1365,2026-07-26
+Telangana,Rangareddy,Pune,Millet,Bajra Millet,5235,2240,1888,2523,Falling,High,Medium,Good,Yes,Low,Yes,Kharif,Normal,412,139,3.4,Today,2188,1993,2026-07-29
+Telangana,Medak,Bhopal,Grapes,Manik Chaman,6640,5974,4635,6586,Stable,High,Low,Premium,Yes,Low,Yes,Zaid,Cold Wave,3500,305,4.3,Within 10 Days,6017,5714,2026-07-27
+Odisha,Berhampur,Azadpur,Potato,Kufri Jyoti,525,1356,1170,1705,Rising,Medium,Low,Premium,Yes,Low,Yes,Rabi,Flood,392,88,4.0,Next Week,1425,1529,2026-07-29
+Gujarat,Bhavnagar,Kolhapur,Onion,Bellary Red,3209,3386,2576,4308,Falling,High,Medium,Average,Yes,Medium,No,Perennial,Heavy Rain,4484,189,3.1,Hold for 30 Days,3149,2931,2026-08-01
+Chhattisgarh,Dhamtari,Chennai,Cotton,Bt Cotton,8386,4197,3484,4966,Rising,High,High,Premium,Yes,High,Yes,Perennial,Cold Wave,2139,169,3.5,Within 10 Days,4361,4753,2026-07-24
+Uttar Pradesh,Varanasi,Kurnool,Wheat,Sharbati Wheat,8500,4244,3741,4939,Falling,High,Medium,Premium,No,High,Yes,Zaid,Heatwave,1943,154,4.1,Next Week,4092,3710,2026-07-28
+Andhra Pradesh,Prakasam,Bhopal,Tomato,Arka Saurabh,3164,1475,1164,1730,Falling,High,High,Average,Yes,High,No,Kharif,Drought,3382,382,4.5,Today,1375,1398,2026-07-27
+Rajasthan,Jaipur,Kolhapur,Onion,Red Onion,3823,2940,2434,3768,Stable,High,Low,Average,Yes,Medium,Yes,Perennial,Heavy Rain,913,308,4.1,Hold for 15 Days,2959,2831,2026-07-29
+Haryana,Fatehabad,Warangal,Mango,Bangalora Mango,5395,2805,2553,3132,Rising,Medium,Medium,Average,Yes,Medium,Yes,Kharif,Cold Wave,1646,235,3.9,Hold for 15 Days,2881,3045,2026-07-30
+Rajasthan,Udaipur,Salem,Onion,Red Onion,695,2780,2104,3629,Stable,Low,Medium,Good,Yes,Low,Yes,Rabi,Heavy Rain,3214,207,4.0,Within 10 Days,2757,2868,2026-07-31
+Maharashtra,Ahmednagar,Coimbatore,Turmeric,Rajapur Turmeric,9063,7029,6220,7821,Rising,High,High,Premium,Yes,Medium,Yes,Rabi,Cold Wave,3581,195,4.4,Within 10 Days,7205,7792,2026-08-01
+Maharashtra,Pune,Belagavi,Turmeric,Salem Turmeric,3757,3669,2856,4531,Falling,Medium,High,Average,No,High,No,Kharif,Heavy Rain,3435,354,3.9,Next Week,3422,3187,2026-07-29
+Rajasthan,Jodhpur,Azadpur,Potato,Kufri Chipsona,8223,856,682,956,Rising,Medium,Low,Premium,Yes,Medium,Yes,Perennial,Normal,3241,250,4.1,Hold for 15 Days,890,947,2026-07-28
+Madhya Pradesh,Gwalior,Hubli,Rice,Sona Masuri,947,5019,4069,6211,Falling,High,Medium,Premium,Yes,High,Yes,Rabi,Drought,2275,141,4.1,Within 10 Days,4634,4766,2026-07-30
+Andhra Pradesh,Chittoor,Kota,Soybean,JS-335,9757,3972,2998,5041,Falling,Medium,Low,Average,Yes,Low,Yes,Perennial,Heatwave,4741,163,3.4,Today,3675,3468,2026-07-30
+Maharashtra,Aurangabad,Guntur,Rice,Sona Masuri,875,5848,5225,6826,Rising,High,Medium,Premium,Yes,Low,Yes,Kharif,Drought,4611,191,4.9,Next Week,6212,6527,2026-07-24
+Karnataka,Bijapur,Solapur,Chilli,Byadgi Chilli,7207,3592,3125,4424,Falling,Low,Medium,Average,No,Low,Yes,Rabi,Heatwave,3399,162,4.5,Next Week,3332,3314,2026-07-24
+Madhya Pradesh,Ratlam,Azadpur,Soybean,Co-1,10066,4320,3343,5534,Rising,High,Low,Premium,No,Low,No,Rabi,Normal,1026,367,4.3,Within 10 Days,4636,4728,2026-07-29
+Punjab,Jalandhar,Kolkata,Maize,Yellow Maize,1820,1133,990,1520,Falling,Low,High,Good,No,High,No,Zaid,Normal,4773,197,3.2,Hold for 15 Days,1095,1028,2026-07-23
+Punjab,Amritsar,Salem,Maize,Hybrid Maize,378,1375,1071,1624,Rising,Medium,Medium,Average,Yes,High,Yes,Zaid,Normal,4254,365,3.1,Within 10 Days,1416,1566,2026-07-31
+Maharashtra,Pune,Indore,Tomato,Deshi Tomato,2905,2137,1842,2479,Stable,Low,Low,Premium,Yes,Low,No,Perennial,Flood,1558,32,3.7,Hold for 15 Days,2101,2206,2026-07-23
+Andhra Pradesh,Prakasam,Belagavi,Cotton,MCU-5,2848,3714,2980,4409,Falling,Low,Medium,Good,No,High,Yes,Perennial,Heatwave,1814,194,4.8,Next Week,3458,3173,2026-07-26
+Rajasthan,Udaipur,Nagpur,Onion,Ratnagiri Red,669,2269,2013,2704,Rising,Low,Low,Average,Yes,High,Yes,Perennial,Heavy Rain,4580,219,4.9,Within 10 Days,2432,2490,2026-07-30
+Rajasthan,Udaipur,Pune,Mango,Bangalora Mango,2106,4712,3652,6296,Stable,Low,Low,Good,Yes,Low,Yes,Rabi,Heavy Rain,1878,69,3.1,Today,4804,4681,2026-07-23
+Gujarat,Patan,Sangli,Chilli,Teja Chilli,406,6018,5389,7343,Stable,Medium,Low,Premium,No,Medium,Yes,Perennial,Heavy Rain,1525,80,4.1,Hold for 30 Days,6080,6282,2026-08-01
+Andhra Pradesh,Kurnool,Varanasi,Garlic,G-4,6782,8186,6986,8923,Falling,Medium,Medium,Good,No,Low,Yes,Perennial,Normal,617,207,4.8,Next Week,7870,6998,2026-07-26
+Chhattisgarh,Durg,Visakhapatnam,Banana,Grand Naine,5015,2902,2224,3814,Stable,Medium,Medium,Premium,No,Medium,No,Zaid,Normal,2507,378,3.8,Within 10 Days,2854,2885,2026-07-27
+Odisha,Baripada,Bhopal,Millet,Ragi Millet,2160,2314,1894,2986,Stable,High,High,Average,Yes,Medium,Yes,Rabi,Heavy Rain,1944,34,3.5,Hold for 15 Days,2272,2281,2026-07-30
+Haryana,Fatehabad,Lucknow,Turmeric,Rajapur Turmeric,2652,6990,5823,8391,Rising,High,Low,Good,No,High,No,Rabi,Flood,2418,388,4.7,Today,7249,7609,2026-07-31
+West Bengal,Jalpaiguri,Bhopal,Tomato,Deshi Tomato,3738,2200,1841,2889,Stable,Low,High,Average,Yes,Medium,No,Rabi,Cold Wave,1718,312,4.6,Within 3 Days,2178,2267,2026-07-29
+Odisha,Sambalpur,Karnal,Mango,Dasheri Mango,1082,5326,4740,6323,Stable,High,Medium,Premium,Yes,Medium,No,Zaid,Flood,2745,355,3.2,Today,5291,5206,2026-07-28
+West Bengal,Siliguri,Sangli,Garlic,Yamuna Safed-3,8525,6331,5480,8070,Falling,High,High,Average,No,Low,No,Zaid,Heatwave,3728,212,3.8,Today,6045,6011,2026-07-30
+Uttar Pradesh,Kanpur,Chennai,Pulses,Rajma,3763,4158,3712,5474,Falling,Low,Medium,Premium,No,Low,Yes,Perennial,Flood,1348,384,3.5,Hold for 30 Days,4015,3610,2026-07-23
+Chhattisgarh,Rajnandgaon,Mysuru,Maize,White Maize,3709,1088,864,1261,Falling,Low,Medium,Premium,No,Medium,Yes,Kharif,Normal,4168,104,4.0,Within 10 Days,1025,957,2026-08-02
+West Bengal,Durgapur,Kolhapur,Tomato,Cherry Tomato,2382,1744,1538,2113,Stable,Medium,High,Average,Yes,Medium,No,Kharif,Flood,338,236,3.5,Within 3 Days,1749,1684,2026-08-01
+Gujarat,Patan,Karnal,Grapes,Manik Chaman,2005,2985,2609,3989,Stable,Medium,High,Good,Yes,High,Yes,Kharif,Flood,2338,120,4.4,Next Week,2962,2866,2026-07-25
+Andhra Pradesh,Tirupati,Hubli,Maize,Hybrid Maize,4814,1579,1274,2083,Stable,Medium,Low,Premium,No,Low,No,Zaid,Normal,1843,89,4.9,Hold for 15 Days,1548,1535,2026-07-31
+Punjab,Ludhiana,Ahmedabad,Millet,Jowar Millet,1551,2581,2047,3160,Falling,Low,Low,Premium,Yes,High,Yes,Kharif,Heavy Rain,695,358,3.2,Hold for 15 Days,2433,2335,2026-07-26
+Odisha,Rourkela,Belagavi,Rice,Sona Masuri,2760,5502,4692,6145,Falling,High,Low,Premium,Yes,Low,No,Kharif,Flood,1170,259,3.4,Within 3 Days,5318,5134,2026-07-30
+Uttar Pradesh,Meerut,Solapur,Soybean,Non-GMO Soybean,2083,3642,2733,4593,Falling,High,Low,Premium,No,Medium,Yes,Kharif,Drought,4491,43,4.4,Today,3548,3330,2026-07-26
+Haryana,Sirsa,Salem,Wheat,Basmati Wheat,696,3944,3453,4360,Falling,Medium,Medium,Premium,Yes,Low,Yes,Rabi,Heatwave,2992,188,4.8,Hold for 30 Days,3691,3641,2026-07-28
+West Bengal,Malda,Hubli,Cotton,PKV Rajat,3991,5458,4835,6850,Stable,Medium,Medium,Premium,Yes,Medium,Yes,Kharif,Flood,1605,58,3.8,Hold for 30 Days,5454,5495,2026-07-26
+Gujarat,Patan,Ludhiana,Banana,Nendran,3583,3479,2897,4591,Falling,Low,Low,Good,Yes,High,Yes,Zaid,Heavy Rain,2874,11,4.4,Within 10 Days,3310,3215,2026-07-24
+Punjab,Bathinda,Kurnool,Millet,Kodo Millet,10179,1965,1634,2474,Stable,High,Medium,Average,No,Low,Yes,Kharif,Cold Wave,395,334,4.9,Hold for 30 Days,1992,2034,2026-07-31
+Karnataka,Hassan,Indore,Potato,Kufri Bahar,874,1051,860,1201,Stable,Low,High,Good,No,Low,No,Kharif,Normal,4383,233,3.6,Hold for 15 Days,1061,1000,2026-07-27
+Madhya Pradesh,Indore,Hyderabad,Pulses,Toor Dal,3293,7165,6058,9004,Falling,Low,Low,Good,No,Low,No,Kharif,Heavy Rain,2126,237,3.7,Hold for 30 Days,6849,6603,2026-07-28
+Odisha,Baripada,Nashik,Cotton,NHH-44,85,5743,4816,7291,Falling,Medium,Medium,Premium,Yes,Low,No,Rabi,Heatwave,3652,59,3.5,Within 3 Days,5348,5415,2026-07-27
+Punjab,Gurdaspur,Lucknow,Tomato,Arka Saurabh,1815,3249,2504,4291,Stable,Medium,High,Good,Yes,Low,No,Kharif,Normal,4644,381,3.1,Hold for 15 Days,3293,3243,2026-07-25
+Bihar,Bhagalpur,Kolkata,Soybean,PK-416,1746,3364,2811,3982,Stable,Medium,Low,Average,Yes,Low,No,Perennial,Heatwave,3108,155,3.9,Within 3 Days,3315,3398,2026-07-25
+Haryana,Panipat,Coimbatore,Chilli,Teja Chilli,9119,4358,3777,5790,Rising,Low,High,Premium,Yes,High,No,Kharif,Cold Wave,3185,292,4.0,Hold for 30 Days,4691,4885,2026-07-23
+Odisha,Jharsuguda,Solapur,Grapes,Thompson Grapes,486,6254,4750,7205,Rising,High,Medium,Premium,No,High,No,Rabi,Drought,808,358,4.6,Within 3 Days,6661,6586,2026-07-26
+Karnataka,Raichur,Coimbatore,Pulses,Moong Dal,10652,5474,4750,5981,Stable,Low,Medium,Good,No,High,No,Zaid,Cold Wave,4823,32,3.0,Next Week,5408,5675,2026-07-26
+West Bengal,Asansol,Warangal,Banana,Nendran,3074,1607,1327,2162,Rising,Low,High,Premium,Yes,Low,Yes,Kharif,Drought,3390,25,3.9,Hold for 30 Days,1664,1713,2026-07-29
+Maharashtra,Solapur,Salem,Sugarcane,Co-86032 Sugarcane,5335,342,274,442,Stable,Low,High,Average,No,Low,Yes,Zaid,Heatwave,4604,117,4.9,Hold for 30 Days,336,342,2026-07-27
+Tamil Nadu,Thoothukudi,Ludhiana,Maize,Yellow Maize,3545,1020,802,1308,Falling,Low,Medium,Average,No,Medium,Yes,Kharif,Heatwave,3134,233,3.5,Within 10 Days,975,930,2026-08-02
+Telangana,Mahabubnagar,Ludhiana,Cotton,PKV Rajat,8901,4706,3940,5728,Stable,Low,Medium,Good,Yes,High,No,Rabi,Normal,2924,268,3.2,Today,4643,4920,2026-07-25
+Tamil Nadu,Salem,Mysuru,Maize,White Maize,10363,1403,1180,1781,Rising,High,Low,Average,No,Medium,Yes,Rabi,Cold Wave,494,240,4.4,Today,1438,1480,2026-07-29
+Tamil Nadu,Chennai,Ahmedabad,Potato,Kufri Bahar,1639,1371,1032,1729,Falling,Medium,Low,Average,Yes,Medium,Yes,Kharif,Flood,894,188,4.9,Today,1285,1259,2026-07-24
+Karnataka,Gadag,Bhopal,Turmeric,Alleppey Turmeric,3417,4348,3423,5572,Rising,Low,High,Average,No,Medium,Yes,Zaid,Flood,3356,10,4.1,Hold for 30 Days,4471,4583,2026-07-24
+Andhra Pradesh,Chittoor,Hyderabad,Pulses,Toor Dal,3491,4892,4012,6136,Falling,Low,Low,Average,Yes,Low,Yes,Rabi,Normal,2108,320,4.7,Within 3 Days,4534,4486,2026-07-24
+West Bengal,Kolkata,Coimbatore,Pulses,Masoor Dal,9055,6385,4895,8146,Rising,High,Medium,Good,No,Low,No,Rabi,Cold Wave,2221,56,3.6,Today,6857,6907,2026-07-26
+Uttar Pradesh,Moradabad,Chennai,Garlic,G-100,674,6551,5101,7629,Falling,Low,Low,Premium,No,Medium,No,Zaid,Drought,1400,352,4.5,Hold for 15 Days,6208,5803,2026-07-29
+Rajasthan,Sikar,Nashik,Soybean,PK-416,385,2645,2313,3304,Rising,Medium,High,Average,Yes,Low,Yes,Kharif,Drought,3618,398,4.2,Today,2785,2920,2026-07-25
+Rajasthan,Jodhpur,Kota,Mango,Langra Mango,3053,4131,3161,4867,Stable,Medium,High,Premium,Yes,Medium,Yes,Rabi,Drought,3955,86,3.4,Hold for 30 Days,4157,4324,2026-07-26
+Uttar Pradesh,Agra,Nagpur,Groundnut,GG-10,1132,3609,3024,4668,Stable,Medium,High,Good,No,High,No,Kharif,Heavy Rain,626,337,3.6,Within 10 Days,3676,3657,2026-07-29
+West Bengal,Siliguri,Ahmedabad,Pulses,Chana Dal,6221,3516,2945,4154,Stable,Low,Medium,Premium,No,Medium,No,Zaid,Heatwave,4288,251,4.8,Today,3516,3389,2026-07-31
+Punjab,Fatehgarh Sahib,Kurnool,Onion,White Onion,3112,1476,1272,1759,Stable,High,Medium,Good,Yes,Low,No,Perennial,Heatwave,4224,112,4.2,Within 10 Days,1495,1405,2026-08-02
+Gujarat,Patan,Ahmedabad,Soybean,JS-335,8449,3811,3025,4301,Rising,High,Low,Good,Yes,High,No,Kharif,Cold Wave,2074,234,4.2,Hold for 15 Days,4085,4066,2026-07-27
+Andhra Pradesh,Visakhapatnam,Varanasi,Soybean,Co-1,8419,2790,2529,3462,Stable,Medium,High,Premium,Yes,Low,No,Perennial,Cold Wave,1383,60,3.0,Hold for 30 Days,2830,2791,2026-07-27
+West Bengal,Durgapur,Jaipur,Cotton,Bt Cotton,3742,5717,5018,6318,Stable,Low,Low,Average,Yes,High,Yes,Perennial,Flood,4576,220,3.7,Today,5762,5676,2026-07-26
+Bihar,Arrah,Kota,Cotton,PKV Rajat,4220,5890,5295,7011,Falling,Medium,High,Premium,Yes,High,Yes,Kharif,Heatwave,4557,8,3.8,Within 3 Days,5661,5192,2026-07-28
+Karnataka,Mysuru,Karnal,Onion,Nasik Red,1784,2062,1811,2457,Falling,Low,Medium,Average,No,Low,Yes,Zaid,Drought,4880,289,4.0,Next Week,1968,1912,2026-07-27
+Odisha,Rourkela,Coimbatore,Cotton,NHH-44,7367,4695,3840,5499,Rising,Low,High,Average,Yes,High,Yes,Perennial,Heatwave,343,51,4.6,Hold for 15 Days,5049,5134,2026-08-01
+Haryana,Rohtak,Kota,Maize,HQPM-1,3017,1433,1144,1920,Stable,Medium,Medium,Premium,Yes,Low,No,Perennial,Heavy Rain,387,108,4.7,Hold for 30 Days,1420,1366,2026-07-24
+Tamil Nadu,Thoothukudi,Kolkata,Potato,Kufri Surya,11093,759,695,837,Stable,High,Medium,Good,No,High,No,Perennial,Heatwave,3621,305,3.4,Today,766,726,2026-08-01
+Tamil Nadu,Tiruchirappalli,Patna,Pulses,Chana Dal,5743,6502,5904,8031,Rising,Medium,High,Good,Yes,Low,No,Kharif,Normal,4876,42,4.0,Next Week,7001,7349,2026-07-29
+Chhattisgarh,Ambikapur,Lucknow,Onion,Bellary Red,1594,2504,2168,3310,Falling,Low,Medium,Premium,No,High,Yes,Zaid,Flood,853,200,4.3,Within 3 Days,2405,2185,2026-07-28
+Madhya Pradesh,Ujjain,Kurnool,Pulses,Toor Dal,4364,7970,6080,10611,Falling,High,Medium,Good,No,High,No,Rabi,Cold Wave,4999,142,3.4,Within 10 Days,7659,7499,2026-07-26
+Odisha,Berhampur,Nagpur,Potato,Kufri Bahar,3805,950,838,1056,Falling,High,High,Premium,No,Low,Yes,Kharif,Heatwave,4250,195,4.2,Hold for 15 Days,925,891,2026-07-24
+West Bengal,Siliguri,Guntur,Soybean,Co-1,6568,4835,4283,5846,Rising,High,Low,Average,Yes,High,No,Perennial,Normal,1731,239,5.0,Within 10 Days,5082,5229,2026-08-02
+Maharashtra,Nagpur,Ludhiana,Cotton,Surabhi,10089,4023,3201,5386,Falling,Medium,High,Good,No,Low,Yes,Perennial,Normal,3772,112,3.8,Next Week,3789,3580,2026-07-26
+Gujarat,Patan,Kolhapur,Potato,Kufri Jyoti,4472,1266,980,1695,Falling,High,Low,Premium,No,Medium,Yes,Rabi,Cold Wave,3753,260,3.3,Within 10 Days,1203,1167,2026-07-26
+Haryana,Sirsa,Hyderabad,Wheat,PBW-343,2878,4724,4216,5224,Falling,High,High,Average,No,High,No,Zaid,Heavy Rain,3251,291,4.1,Next Week,4443,4209,2026-07-28
+West Bengal,Jalpaiguri,Belagavi,Pulses,Moong Dal,5868,7877,7099,9317,Falling,Medium,Low,Good,No,Low,Yes,Rabi,Normal,3063,220,4.3,Hold for 30 Days,7438,7409,2026-08-01
+Gujarat,Bhavnagar,Nagpur,Chilli,Kashmiri Chilli,4823,5133,4086,6160,Stable,Low,Medium,Good,No,Low,No,Rabi,Cold Wave,1806,16,3.3,Within 3 Days,5166,5359,2026-08-01
+Punjab,Amritsar,Ludhiana,Cotton,MCU-5,3887,6201,5203,8364,Rising,Medium,Low,Premium,No,High,Yes,Kharif,Heavy Rain,3493,163,3.5,Within 10 Days,6430,6899,2026-07-31
+Tamil Nadu,Coimbatore,Lasalgaon,Wheat,WH-1105,5378,4446,3670,5965,Falling,Medium,Medium,Average,Yes,Low,No,Perennial,Normal,4588,332,4.3,Next Week,4332,3993,2026-07-30
+Bihar,Gaya,Salem,Garlic,AGT-1,1114,9850,8752,12893,Rising,High,Medium,Good,No,High,No,Kharif,Flood,4329,391,4.0,Today,10499,11128,2026-07-24
+Punjab,Ludhiana,Hyderabad,Banana,Robusta,3663,1558,1357,1954,Rising,Low,Medium,Good,Yes,Medium,No,Kharif,Flood,3758,325,3.5,Hold for 30 Days,1664,1742,2026-07-29
+Telangana,Medak,Varanasi,Onion,Pune Red,1171,3527,2918,4240,Rising,High,High,Average,No,Medium,Yes,Zaid,Heatwave,458,82,3.1,Hold for 30 Days,3602,4046,2026-07-29
+Haryana,Hisar,Kolkata,Turmeric,Nanded Turmeric,1003,4996,4037,5815,Falling,High,High,Good,No,High,No,Kharif,Heavy Rain,3005,46,4.7,Within 3 Days,4613,4634,2026-08-01
+Tamil Nadu,Vellore,Hubli,Tomato,Cherry Tomato,3442,2872,2530,3445,Rising,High,High,Average,Yes,Low,Yes,Perennial,Flood,1069,271,4.3,Within 3 Days,3010,3211,2026-07-29
+Chhattisgarh,Rajnandgaon,Hubli,Wheat,WH-1105,2183,3936,3084,5194,Stable,High,Medium,Average,Yes,Medium,Yes,Rabi,Drought,3856,171,3.0,Next Week,3949,3894,2026-07-30
+Maharashtra,Nashik,Ahmedabad,Groundnut,Phule Pragati,684,4798,3673,5983,Rising,Medium,High,Average,Yes,High,Yes,Zaid,Drought,1560,364,4.1,Today,4930,5149,2026-07-25
+Bihar,Purnia,Varanasi,Turmeric,Nanded Turmeric,399,3443,2728,3755,Stable,Low,Medium,Average,No,Medium,No,Perennial,Heatwave,1854,295,3.4,Next Week,3418,3432,2026-07-24
+Chhattisgarh,Ambikapur,Hubli,Maize,HQPM-1,7412,1364,1023,1708,Falling,Medium,Medium,Good,Yes,Low,Yes,Zaid,Heatwave,2256,169,4.4,Within 10 Days,1334,1271,2026-07-30
+Tamil Nadu,Vellore,Bhopal,Pulses,Moong Dal,1209,4404,3375,5539,Falling,Medium,Medium,Premium,Yes,Low,Yes,Kharif,Drought,1955,59,4.0,Today,4060,4026,2026-07-27
+Telangana,Adilabad,Kurnool,Onion,Red Onion,3666,1699,1463,2260,Rising,Low,Low,Premium,No,High,Yes,Zaid,Normal,4871,385,4.9,Hold for 15 Days,1816,1918,2026-08-02
+West Bengal,Jalpaiguri,Sangli,Millet,Bajra Millet,1203,1383,1061,1579,Stable,Medium,High,Good,Yes,High,Yes,Rabi,Cold Wave,4969,325,4.9,Hold for 30 Days,1396,1371,2026-08-01
+Bihar,Munger,Kota,Turmeric,Nanded Turmeric,7047,5855,4893,7362,Stable,High,High,Average,No,High,No,Zaid,Cold Wave,4806,171,4.7,Hold for 15 Days,5916,5814,2026-07-28
+Andhra Pradesh,Vijayawada,Ahmedabad,Pulses,Moong Dal,3186,6737,5565,7998,Falling,Low,Low,Average,Yes,Medium,No,Kharif,Flood,4540,74,5.0,Next Week,6200,6389,2026-07-30
+West Bengal,Malda,Lasalgaon,Onion,Ratnagiri Red,2328,980,811,1099,Rising,Low,Low,Good,No,High,Yes,Rabi,Drought,2399,158,3.2,Hold for 15 Days,1033,1050,2026-08-01
+Odisha,Puri,Varanasi,Groundnut,GG-10,3432,3767,2849,4890,Rising,Low,Low,Good,Yes,Low,Yes,Zaid,Flood,3150,227,3.8,Today,4038,4040,2026-07-23
+West Bengal,Jalpaiguri,Warangal,Rice,MTU-1010,6316,3573,3007,4003,Rising,High,Medium,Average,Yes,Low,Yes,Kharif,Cold Wave,3518,233,4.5,Hold for 30 Days,3752,3831,2026-07-29
+Bihar,Arrah,Kolhapur,Sugarcane,Co-0238,1999,391,310,464,Stable,Low,Low,Good,Yes,High,Yes,Perennial,Heavy Rain,4881,106,4.0,Within 10 Days,392,393,2026-07-25
+Punjab,Jalandhar,Pune,Onion,Pune Red,11268,2097,1723,2461,Stable,Low,High,Good,No,High,Yes,Zaid,Normal,1686,184,4.2,Hold for 15 Days,2107,2084,2026-07-30
+Punjab,Bathinda,Kolhapur,Maize,Hybrid Maize,943,1271,1027,1648,Falling,High,Low,Good,No,High,No,Kharif,Cold Wave,3018,112,4.5,Within 3 Days,1184,1146,2026-07-29
+Tamil Nadu,Vellore,Jaipur,Sugarcane,Co-13006,10998,476,360,535,Stable,High,Medium,Good,Yes,Low,No,Kharif,Cold Wave,4108,340,4.9,Today,473,465,2026-07-23
+Uttar Pradesh,Varanasi,Lasalgaon,Garlic,G-100,996,6692,5570,8306,Rising,Medium,Low,Premium,Yes,Low,Yes,Perennial,Flood,4893,369,3.0,Within 3 Days,7196,7230,2026-07-26
+Madhya Pradesh,Bhopal,Lasalgaon,Banana,Dwarf Cavendish,5872,1929,1712,2409,Stable,Low,Medium,Good,Yes,High,No,Rabi,Normal,1542,179,4.8,Within 10 Days,1901,1973,2026-07-25
+Telangana,Rangareddy,Coimbatore,Potato,Chandrakhi,9436,1465,1210,1634,Stable,High,Medium,Average,Yes,Medium,Yes,Rabi,Heatwave,2831,357,4.4,Hold for 30 Days,1489,1454,2026-07-31
+Telangana,Rangareddy,Warangal,Soybean,MAUS-61,2332,3136,2799,3510,Rising,Low,Low,Premium,No,High,No,Perennial,Heavy Rain,2785,231,4.5,Within 10 Days,3374,3378,2026-07-30
+Karnataka,Mysuru,Hubli,Rice,Swarna Rice,1143,3965,3130,5018,Rising,Low,Low,Good,Yes,Low,No,Rabi,Drought,4415,314,3.9,Within 10 Days,4133,4501,2026-07-26
+Rajasthan,Jodhpur,Hubli,Tomato,Deshi Tomato,1723,4876,4213,5533,Rising,High,Medium,Premium,Yes,Medium,Yes,Perennial,Heavy Rain,4313,357,3.6,Hold for 15 Days,5233,5328,2026-08-02
+Andhra Pradesh,Chittoor,Patna,Chilli,Mathania Chilli,3896,6639,5703,8432,Stable,Low,Low,Premium,Yes,Low,No,Perennial,Drought,647,130,4.0,Hold for 15 Days,6767,6333,2026-07-27
+Tamil Nadu,Salem,Belagavi,Garlic,G-282,3672,6960,5568,9243,Rising,Medium,Medium,Average,Yes,Medium,No,Perennial,Flood,1040,374,4.0,Within 3 Days,7424,7960,2026-07-25
+Gujarat,Gandhinagar,Karnal,Chilli,Mathania Chilli,782,7176,5492,8377,Rising,Medium,Low,Average,Yes,Low,Yes,Kharif,Heavy Rain,1235,366,3.9,Next Week,7356,8042,2026-07-25
+Andhra Pradesh,Visakhapatnam,Ludhiana,Pulses,Masoor Dal,3196,5438,4228,6085,Stable,High,Medium,Average,Yes,Low,No,Zaid,Heavy Rain,2835,378,4.5,Hold for 15 Days,5392,5264,2026-07-31
+Punjab,Ludhiana,Jaipur,Onion,Red Onion,2088,3413,2697,4228,Stable,Medium,Low,Good,No,High,No,Perennial,Flood,950,312,4.2,Within 3 Days,3465,3337,2026-07-23
+Tamil Nadu,Madurai,Azadpur,Soybean,JS-335,2725,3727,3161,4632,Rising,Medium,High,Good,Yes,High,Yes,Kharif,Heavy Rain,3715,96,3.3,Next Week,3938,4171,2026-07-24
+Andhra Pradesh,Nellore,Hubli,Turmeric,Nanded Turmeric,1525,5184,4678,6746,Falling,High,High,Good,Yes,Medium,No,Perennial,Drought,1402,67,4.4,Next Week,4871,4620,2026-07-30
+Odisha,Berhampur,Jaipur,Wheat,Basmati Wheat,3038,3470,2854,4541,Falling,Low,Low,Good,No,High,Yes,Perennial,Drought,4557,378,4.3,Hold for 15 Days,3360,3256,2026-07-30
+Odisha,Sambalpur,Belagavi,Rice,Basmati Rice,1954,3881,3316,4625,Rising,Low,High,Premium,No,Low,No,Rabi,Heavy Rain,392,332,3.4,Next Week,4017,4101,2026-07-29
+Tamil Nadu,Thoothukudi,Indore,Rice,Basmati Rice,5510,4323,3947,5640,Stable,Medium,Medium,Premium,No,Low,No,Perennial,Cold Wave,4187,23,4.3,Hold for 15 Days,4263,4305,2026-07-25
+Chhattisgarh,Rajnandgaon,Salem,Grapes,Cheema Saheb,3470,4230,3399,5180,Stable,Low,Medium,Premium,No,Low,No,Kharif,Heavy Rain,1523,148,4.7,Next Week,4311,4283,2026-07-31
+Andhra Pradesh,East Godavari,Ludhiana,Soybean,Co-1,3591,2710,2157,2990,Stable,Medium,Low,Premium,No,Medium,No,Zaid,Heavy Rain,2070,273,3.6,Today,2696,2584,2026-07-30
+Chhattisgarh,Bhilai,Salem,Millet,Bajra Millet,3756,1841,1609,2248,Falling,Low,High,Good,Yes,High,Yes,Rabi,Flood,1980,375,3.1,Hold for 15 Days,1772,1661,2026-08-02
+Haryana,Karnal,Chennai,Maize,Yellow Maize,3692,1720,1381,2125,Stable,High,High,Good,Yes,Low,No,Rabi,Flood,1877,151,3.6,Next Week,1738,1749,2026-07-29
+Gujarat,Rajkot,Sangli,Cotton,MCU-5,2342,4150,3500,4785,Stable,Low,High,Average,No,High,Yes,Rabi,Drought,883,164,4.2,Next Week,4156,3963,2026-08-02
+Rajasthan,Jaipur,Nashik,Mango,Alphonso Mango,1796,5535,4709,7227,Stable,Medium,High,Average,No,Low,No,Zaid,Heavy Rain,3022,106,4.4,Within 10 Days,5603,5301,2026-07-26
+Andhra Pradesh,Visakhapatnam,Pune,Turmeric,High Curcumin Turmeric,1321,5073,4004,5785,Falling,Low,Low,Average,No,Low,No,Perennial,Flood,1802,363,4.8,Next Week,4907,4759,2026-07-26
+Rajasthan,Jaipur,Pune,Groundnut,TL-001,7892,4637,3578,5136,Falling,Medium,High,Average,Yes,Medium,No,Kharif,Normal,2774,277,3.9,Hold for 30 Days,4381,4229,2026-07-25
+Gujarat,Kheda,Ludhiana,Maize,Yellow Maize,11421,1450,1171,1837,Stable,Low,Medium,Premium,Yes,Medium,No,Kharif,Heatwave,4092,171,4.1,Hold for 15 Days,1431,1516,2026-08-01
+Andhra Pradesh,Kurnool,Chennai,Mango,Dasheri Mango,2691,4919,3805,6083,Rising,Low,High,Average,Yes,High,Yes,Rabi,Flood,4010,277,3.6,Hold for 30 Days,5187,5261,2026-07-23
+Chhattisgarh,Rajnandgaon,Solapur,Garlic,G-282,5690,10687,8749,11910,Stable,High,Low,Good,Yes,High,No,Kharif,Cold Wave,306,365,4.1,Next Week,10520,10454,2026-08-02
+Punjab,Hoshiarpur,Kolkata,Mango,Bangalora Mango,11711,4732,3718,5332,Falling,Medium,Medium,Premium,Yes,Medium,No,Zaid,Normal,3717,83,3.6,Within 10 Days,4389,4027,2026-07-23
+Maharashtra,Kolhapur,Patna,Groundnut,Phule Pragati,606,4830,4356,6123,Falling,High,High,Good,Yes,Low,No,Perennial,Flood,4822,235,3.8,Within 3 Days,4497,4397,2026-07-24
+Rajasthan,Bikaner,Kolkata,Millet,Ragi Millet,3845,1193,1009,1515,Rising,Low,Low,Premium,No,Medium,Yes,Rabi,Flood,4612,389,4.6,Hold for 15 Days,1253,1315,2026-07-24
+Karnataka,Dharwad,Guntur,Maize,Vivek Hybrid,8884,1063,893,1151,Rising,Low,Medium,Good,No,Low,No,Perennial,Cold Wave,3191,155,3.6,Today,1128,1179,2026-07-29
+Odisha,Koraput,Sangli,Wheat,WH-1105,2418,4723,4191,5896,Stable,High,Low,Good,No,High,Yes,Rabi,Flood,4441,44,4.7,Next Week,4676,4777,2026-07-29
+West Bengal,Siliguri,Lasalgaon,Cotton,Bunny Bt,9745,3834,3402,4411,Falling,Low,High,Average,Yes,Low,No,Rabi,Heatwave,4620,21,3.7,Today,3749,3487,2026-07-31
+West Bengal,Haldia,Bhopal,Grapes,Manik Chaman,10874,3369,2857,4404,Rising,Medium,Low,Premium,No,Low,Yes,Kharif,Heatwave,1672,242,3.8,Next Week,3532,3856,2026-07-25
+Punjab,Hoshiarpur,Chennai,Mango,Chausa Mango,2428,5887,5213,6965,Falling,Low,Medium,Good,Yes,High,Yes,Zaid,Normal,3837,317,4.8,Next Week,5534,5161,2026-08-01
+Haryana,Sonipat,Ludhiana,Turmeric,Nanded Turmeric,4011,5262,4248,6663,Rising,Low,Low,Premium,No,Low,Yes,Kharif,Cold Wave,856,11,3.8,Hold for 30 Days,5400,5759,2026-07-30
+Odisha,Sambalpur,Sangli,Tomato,Hybrid Tomato,2587,2160,1969,2704,Stable,High,High,Average,Yes,Low,Yes,Rabi,Heavy Rain,3379,341,4.5,Within 10 Days,2165,2260,2026-08-01
+Odisha,Rourkela,Sangli,Garlic,G-282,1290,5226,4148,6745,Falling,Low,Medium,Good,Yes,Medium,No,Perennial,Cold Wave,3025,35,3.5,Next Week,4863,4478,2026-07-30
+Andhra Pradesh,Chittoor,Hubli,Groundnut,TL-001,8907,2911,2634,3706,Stable,Medium,High,Premium,Yes,Low,Yes,Kharif,Heatwave,4980,377,3.5,Hold for 15 Days,2854,2910,2026-07-23
+Telangana,Hyderabad,Warangal,Wheat,WH-1105,1141,2801,2346,3735,Falling,High,Low,Good,No,Medium,No,Perennial,Flood,874,281,3.5,Hold for 15 Days,2737,2609,2026-07-26
+Karnataka,Raichur,Hyderabad,Banana,Rasthali,5011,1516,1231,1986,Stable,Medium,High,Good,Yes,Low,No,Zaid,Cold Wave,1963,95,4.1,Hold for 15 Days,1525,1485,2026-07-27
+Chhattisgarh,Bhilai,Mysuru,Banana,Poovan,3675,1518,1147,1649,Rising,Low,Medium,Average,Yes,Low,No,Perennial,Heavy Rain,816,281,4.3,Hold for 15 Days,1596,1720,2026-07-26
+Maharashtra,Nashik,Indore,Wheat,Lokwan Wheat,751,4297,3557,5427,Stable,Medium,High,Average,Yes,High,Yes,Kharif,Cold Wave,602,381,3.3,Within 10 Days,4214,4471,2026-07-24
+Maharashtra,Nagpur,Kolkata,Sugarcane,Co-86032 Sugarcane,10415,551,429,683,Falling,High,Medium,Premium,Yes,High,No,Rabi,Heatwave,816,108,3.9,Within 10 Days,529,486,2026-07-23
+Andhra Pradesh,Nellore,Kolhapur,Chilli,Byadgi Chilli,2479,6378,4936,7603,Rising,High,Medium,Average,No,High,Yes,Perennial,Heavy Rain,2295,302,3.1,Today,6808,7100,2026-07-27
+Bihar,Bhagalpur,Lasalgaon,Groundnut,TL-001,79,4100,3365,5321,Stable,High,High,Good,Yes,Low,Yes,Rabi,Heavy Rain,2519,272,3.9,Within 3 Days,4171,4145,2026-08-02
+Andhra Pradesh,Visakhapatnam,Kolkata,Groundnut,T-64,2618,5084,4016,5652,Rising,Medium,Medium,Average,Yes,Medium,No,Rabi,Heavy Rain,4102,399,4.3,Within 3 Days,5270,5436,2026-07-31
+Telangana,Adilabad,Guntur,Soybean,JS-335,756,3578,2947,4187,Falling,High,Low,Good,Yes,Medium,Yes,Kharif,Cold Wave,4702,95,3.3,Today,3395,3082,2026-07-30
+Odisha,Baripada,Ahmedabad,Chilli,Mathania Chilli,11139,4617,3539,5906,Falling,Medium,High,Premium,No,High,Yes,Kharif,Heatwave,4158,304,4.0,Hold for 15 Days,4287,4352,2026-07-26
+Gujarat,Gandhinagar,Kota,Sugarcane,Co-15018,3231,310,239,392,Rising,Low,Medium,Premium,No,Medium,Yes,Kharif,Cold Wave,4113,239,3.8,Next Week,320,334,2026-07-31
+Bihar,Munger,Visakhapatnam,Soybean,Co-1,3552,3519,3155,4006,Stable,High,High,Good,No,Medium,No,Kharif,Drought,3807,381,4.7,Within 3 Days,3494,3546,2026-07-24
+Gujarat,Patan,Visakhapatnam,Rice,Ponni Rice,214,3897,3274,4713,Rising,Medium,Low,Average,Yes,Low,No,Perennial,Heavy Rain,2270,47,4.1,Today,4137,4250,2026-07-30
+Gujarat,Bhavnagar,Solapur,Potato,Kufri Chipsona,115,1694,1517,2171,Rising,Medium,Low,Premium,No,Medium,No,Rabi,Heavy Rain,3620,99,4.6,Next Week,1791,1897,2026-08-02
+West Bengal,Howrah,Ludhiana,Chilli,Jwala Chilli,1264,7243,6140,8227,Stable,Medium,Medium,Average,Yes,Low,No,Kharif,Heavy Rain,4516,350,3.7,Today,7130,7145,2026-07-24
+Maharashtra,Solapur,Kota,Soybean,PK-416,2937,3393,3110,3883,Rising,High,Low,Premium,No,Low,Yes,Rabi,Drought,2925,185,4.8,Hold for 30 Days,3599,3656,2026-08-01
+Uttar Pradesh,Bareilly,Salem,Groundnut,T-64,3447,5729,5172,6886,Stable,High,Medium,Good,Yes,Low,Yes,Perennial,Drought,1015,46,3.8,Within 3 Days,5680,5990,2026-08-01
+Gujarat,Amreli,Nashik,Sugarcane,Co-15018,3396,396,362,485,Falling,Low,Low,Premium,No,High,No,Perennial,Heatwave,3936,382,4.3,Next Week,368,337,2026-07-30
+West Bengal,Burdwan,Mysuru,Chilli,Mathania Chilli,1454,6678,5964,8015,Falling,Low,Low,Good,Yes,Medium,No,Rabi,Drought,2429,121,4.0,Next Week,6452,5707,2026-07-28
+Haryana,Kaithal,Hubli,Soybean,PK-416,1218,3895,3447,4376,Stable,High,High,Premium,Yes,Low,No,Rabi,Drought,3911,138,3.7,Within 3 Days,3904,3713,2026-07-28
+Uttar Pradesh,Lucknow,Kota,Turmeric,Rajapur Turmeric,8793,7239,6043,8102,Falling,Medium,High,Good,No,High,Yes,Kharif,Heatwave,4774,264,3.7,Within 10 Days,6788,6801,2026-07-24
+Telangana,Nizamabad,Varanasi,Turmeric,Erode Turmeric,1890,5868,4950,6825,Rising,Low,Medium,Good,Yes,High,No,Zaid,Cold Wave,1057,172,3.1,Within 10 Days,6054,6470,2026-07-29
+Punjab,Ludhiana,Pune,Pulses,Masoor Dal,11052,9508,7644,11821,Rising,High,Low,Premium,No,Medium,No,Rabi,Cold Wave,3803,194,3.8,Today,9860,10317,2026-07-26
+West Bengal,Burdwan,Pune,Tomato,Arka Saurabh,3087,4500,3931,5950,Rising,Medium,Medium,Average,No,Medium,Yes,Kharif,Flood,1476,111,3.6,Hold for 30 Days,4856,4754,2026-07-24
+Bihar,Arrah,Pune,Rice,Ponni Rice,4528,4238,3587,5623,Falling,Medium,High,Premium,Yes,Low,No,Zaid,Cold Wave,4837,256,3.1,Next Week,4111,3731,2026-07-25
+Odisha,Baripada,Nagpur,Rice,Basmati Rice,4353,2538,2185,3352,Falling,Medium,Low,Good,Yes,Low,No,Rabi,Heatwave,533,66,4.5,Hold for 15 Days,2486,2174,2026-07-28
+Andhra Pradesh,Prakasam,Ahmedabad,Grapes,Sharad Seedless,11287,5200,4547,5640,Falling,Medium,Low,Good,Yes,High,Yes,Rabi,Cold Wave,2918,241,4.8,Within 3 Days,4895,4447,2026-07-28
+Madhya Pradesh,Ujjain,Azadpur,Garlic,AGT-1,2667,6958,6123,8639,Stable,High,Low,Premium,No,High,No,Zaid,Drought,2523,355,4.4,Next Week,6845,7013,2026-07-31
+Maharashtra,Kolhapur,Kurnool,Garlic,AGT-1,1737,4717,3941,6153,Rising,Medium,High,Average,Yes,High,No,Perennial,Flood,925,64,4.6,Today,4947,5099,2026-07-28
+Gujarat,Kheda,Visakhapatnam,Millet,Ragi Millet,11680,1489,1149,1887,Rising,Medium,High,Average,Yes,Low,No,Rabi,Heatwave,2019,71,5.0,Hold for 15 Days,1580,1680,2026-08-01
+Maharashtra,Jalna,Bhopal,Grapes,Thompson Grapes,1816,3088,2562,4092,Stable,High,Low,Premium,Yes,Low,No,Kharif,Heatwave,1090,68,4.8,Within 3 Days,3098,2995,2026-07-23
+Uttar Pradesh,Agra,Pune,Sugarcane,Co-13006,9548,479,378,591,Stable,Medium,Medium,Premium,Yes,High,Yes,Rabi,Normal,2608,92,4.8,Hold for 30 Days,469,489,2026-07-30
+Chhattisgarh,Ambikapur,Coimbatore,Groundnut,K-6,9706,4070,3630,5473,Rising,High,Medium,Good,Yes,Low,Yes,Perennial,Cold Wave,1224,394,5.0,Today,4265,4485,2026-07-26
+Bihar,Purnia,Kolkata,Garlic,G-4,715,7649,6105,9500,Rising,High,Medium,Good,No,Medium,Yes,Perennial,Cold Wave,2680,224,3.4,Today,8212,8645,2026-07-23
+Uttar Pradesh,Lucknow,Lasalgaon,Groundnut,Phule Pragati,1673,3462,2666,4108,Stable,Medium,Low,Average,Yes,Low,Yes,Kharif,Heavy Rain,3279,106,3.7,Hold for 30 Days,3509,3428,2026-07-30
+West Bengal,Kharagpur,Patna,Groundnut,K-6,9584,3619,3006,4497,Falling,Low,Medium,Good,No,Low,No,Rabi,Cold Wave,4024,60,3.2,Hold for 15 Days,3437,3303,2026-07-31
+Maharashtra,Pune,Patna,Wheat,Basmati Wheat,2827,3662,2841,4569,Stable,High,High,Premium,Yes,Medium,No,Perennial,Flood,1954,155,4.3,Hold for 15 Days,3662,3677,2026-07-25
+Tamil Nadu,Salem,Bhopal,Wheat,PBW-343,1621,4082,3086,4603,Falling,Medium,Medium,Average,No,Medium,Yes,Perennial,Heavy Rain,3828,73,3.6,Hold for 15 Days,3874,3514,2026-07-23
+Rajasthan,Sikar,Chennai,Pulses,Chana Dal,1999,5130,4077,6359,Rising,Low,High,Good,No,Low,No,Zaid,Flood,803,19,4.2,Within 3 Days,5490,5565,2026-07-24
+Maharashtra,Solapur,Ludhiana,Cotton,PKV Rajat,5905,4950,3920,6212,Stable,Medium,Medium,Average,Yes,High,Yes,Zaid,Normal,1237,177,3.3,Hold for 30 Days,4915,4930,2026-07-27
+Andhra Pradesh,Nellore,Visakhapatnam,Grapes,Sharad Seedless,2900,4533,3839,5290,Falling,Medium,Low,Premium,No,High,Yes,Rabi,Heavy Rain,3052,259,4.0,Within 10 Days,4262,4131,2026-07-28
+Madhya Pradesh,Jabalpur,Guntur,Maize,HQPM-1,4758,1179,1045,1472,Stable,Medium,High,Premium,Yes,Medium,No,Zaid,Heatwave,851,295,4.6,Hold for 15 Days,1175,1160,2026-08-01
+Telangana,Khammam,Kurnool,Garlic,G-282,8896,5002,4282,6014,Falling,Medium,High,Average,Yes,Medium,Yes,Rabi,Cold Wave,4389,114,4.3,Within 10 Days,4883,4385,2026-07-23
+Tamil Nadu,Dindigul,Coimbatore,Grapes,Flame Seedless,10318,5695,4414,6381,Falling,High,Low,Average,No,High,No,Perennial,Cold Wave,2910,37,4.3,Hold for 15 Days,5330,5004,2026-07-31
+Haryana,Sonipat,Nagpur,Mango,Langra Mango,664,5009,4170,6750,Falling,High,High,Good,Yes,High,Yes,Rabi,Heavy Rain,2534,74,3.1,Next Week,4806,4345,2026-08-02
+Odisha,Baripada,Varanasi,Rice,Basmati Rice,1335,5117,4153,6434,Falling,Low,Medium,Premium,No,High,Yes,Rabi,Heavy Rain,1216,297,4.5,Today,4867,4773,2026-07-25
+Haryana,Kaithal,Visakhapatnam,Maize,White Maize,550,1299,1152,1663,Stable,Medium,Medium,Good,Yes,Low,Yes,Kharif,Drought,1734,114,4.9,Hold for 15 Days,1294,1346,2026-08-02
+Rajasthan,Sikar,Kota,Cotton,Surabhi,1785,4952,4019,6305,Falling,Medium,Low,Good,Yes,High,Yes,Kharif,Drought,2263,134,4.1,Next Week,4745,4556,2026-07-23
+Karnataka,Shivamogga,Coimbatore,Potato,Chandrakhi,82,1082,866,1419,Rising,Medium,Medium,Premium,No,Medium,No,Perennial,Flood,577,145,4.7,Hold for 15 Days,1134,1180,2026-07-28
+Odisha,Balasore,Visakhapatnam,Cotton,Bt Cotton,4325,4563,3987,5602,Falling,Low,High,Good,No,Medium,Yes,Kharif,Cold Wave,1805,327,3.9,Within 10 Days,4235,4061,2026-07-23
+Haryana,Fatehabad,Ahmedabad,Maize,Hybrid Maize,4139,1651,1404,1965,Rising,Low,Low,Good,No,Low,No,Rabi,Heatwave,2435,93,4.4,Next Week,1763,1766,2026-07-27
+Uttar Pradesh,Lucknow,Ludhiana,Mango,Kesar Mango,389,6407,5054,7073,Stable,High,Low,Good,Yes,Low,No,Rabi,Heatwave,707,210,4.2,Hold for 30 Days,6345,6143,2026-07-28
+Gujarat,Patan,Nashik,Rice,MTU-1010,1832,2990,2605,3383,Rising,Medium,Low,Good,No,Medium,No,Perennial,Drought,1366,225,4.7,Hold for 30 Days,3088,3385,2026-07-23
+Punjab,Hoshiarpur,Hubli,Grapes,Sonaka Grapes,1238,2895,2353,3661,Falling,Medium,High,Good,Yes,Low,Yes,Perennial,Heavy Rain,1391,170,4.9,Hold for 15 Days,2782,2667,2026-07-27
+Odisha,Koraput,Sangli,Maize,Hybrid Maize,290,1596,1467,2128,Falling,High,Medium,Average,Yes,High,Yes,Zaid,Drought,4433,322,3.8,Hold for 15 Days,1532,1377,2026-07-25
+Maharashtra,Latur,Hubli,Onion,White Onion,2068,2308,2009,2762,Rising,Medium,Medium,Good,Yes,High,No,Kharif,Drought,1347,260,4.7,Next Week,2457,2637,2026-07-29
+Chhattisgarh,Durg,Jaipur,Onion,Ratnagiri Red,7189,1631,1377,2167,Falling,High,Medium,Average,No,Low,Yes,Rabi,Normal,1517,32,3.5,Today,1546,1413,2026-07-26
+Madhya Pradesh,Kota,Visakhapatnam,Groundnut,TL-001,1510,4505,3464,5740,Falling,Low,Low,Premium,Yes,Medium,No,Kharif,Flood,1968,150,3.4,Within 3 Days,4347,4199,2026-07-24
+Chhattisgarh,Dhamtari,Belagavi,Rice,Swarna Rice,789,4525,3466,5288,Falling,Medium,High,Good,Yes,High,No,Zaid,Drought,1168,170,3.3,Today,4287,4166,2026-07-26
+Rajasthan,Udaipur,Jaipur,Rice,Sona Masuri,2737,4085,3693,5290,Stable,Low,Medium,Premium,Yes,Medium,Yes,Zaid,Heavy Rain,2947,33,4.5,Hold for 30 Days,4158,4036,2026-07-27
+Haryana,Hisar,Nagpur,Mango,Alphonso Mango,3541,3795,3263,5076,Falling,High,High,Premium,Yes,Medium,No,Perennial,Heavy Rain,3841,381,4.6,Next Week,3697,3454,2026-07-28
+Telangana,Warangal,Lucknow,Banana,Nendran,8071,2653,2260,2929,Falling,Medium,Medium,Good,No,Medium,Yes,Perennial,Heatwave,3789,52,3.1,Next Week,2595,2434,2026-07-23
+Telangana,Nizamabad,Warangal,Groundnut,T-64,10654,3511,2680,4551,Falling,Low,High,Good,Yes,Medium,Yes,Zaid,Cold Wave,2336,272,3.9,Hold for 30 Days,3240,3011,2026-08-02
+Tamil Nadu,Chennai,Kurnool,Grapes,Manik Chaman,1953,3416,2710,3764,Falling,Low,Low,Average,Yes,Low,Yes,Perennial,Heavy Rain,1770,98,4.7,Today,3159,3203,2026-07-29
+Uttar Pradesh,Moradabad,Patna,Turmeric,Nanded Turmeric,2605,4683,3574,6299,Rising,Medium,Medium,Good,Yes,High,No,Kharif,Flood,347,207,3.2,Within 3 Days,4960,5132,2026-07-27
+West Bengal,Jalpaiguri,Patna,Groundnut,K-6,3380,3754,3329,4143,Stable,Low,Medium,Premium,Yes,Low,Yes,Kharif,Drought,430,361,4.9,Today,3710,3809,2026-07-23
+Punjab,Hoshiarpur,Lucknow,Pulses,Moong Dal,1282,3310,2548,4381,Falling,Medium,High,Average,No,Medium,No,Perennial,Heavy Rain,460,235,4.2,Within 3 Days,3103,3088,2026-07-27
+Maharashtra,Solapur,Lasalgaon,Cotton,NHH-44,7124,5940,5193,8017,Stable,Medium,Medium,Premium,No,Low,No,Perennial,Cold Wave,4505,307,4.4,Within 10 Days,6036,6158,2026-07-30
+Odisha,Bhubaneswar,Kurnool,Rice,Ponni Rice,1343,2682,2416,2981,Stable,Low,High,Average,No,Medium,No,Perennial,Drought,470,87,3.6,Within 3 Days,2678,2665,2026-07-25
+Punjab,Moga,Warangal,Chilli,Jwala Chilli,10813,5397,4928,7042,Stable,Medium,High,Average,No,Medium,No,Rabi,Cold Wave,1997,149,4.4,Today,5433,5196,2026-07-30
+Gujarat,Patan,Guntur,Cotton,PKV Rajat,1293,3699,2999,4255,Rising,High,High,Average,Yes,Low,Yes,Kharif,Flood,821,177,3.9,Hold for 30 Days,3823,4091,2026-07-26
+Haryana,Fatehabad,Varanasi,Banana,Grand Naine,1145,3631,2787,3970,Stable,High,Low,Good,No,Low,Yes,Kharif,Drought,1134,292,3.1,Today,3582,3492,2026-07-30
+Chhattisgarh,Rajnandgaon,Hubli,Garlic,G-100,3171,4048,3481,4737,Rising,Low,Medium,Premium,Yes,Low,Yes,Perennial,Flood,3705,398,4.5,Within 3 Days,4331,4442,2026-07-29
+Tamil Nadu,Coimbatore,Pune,Onion,Nasik Red,6849,1562,1371,1910,Rising,Medium,Low,Premium,Yes,Low,No,Perennial,Cold Wave,3653,239,4.9,Hold for 30 Days,1667,1696,2026-08-02
+Rajasthan,Jodhpur,Bhopal,Rice,MTU-1010,3915,3564,3267,4007,Falling,High,High,Premium,No,Medium,Yes,Rabi,Drought,773,328,5.0,Within 10 Days,3466,3376,2026-07-27
+Madhya Pradesh,Satna,Coimbatore,Garlic,G-100,5189,7650,6934,9708,Stable,Medium,High,Good,Yes,Medium,No,Zaid,Cold Wave,3613,106,4.8,Today,7508,7523,2026-07-31
+Tamil Nadu,Thoothukudi,Solapur,Tomato,Hybrid Tomato,2310,2040,1538,2693,Stable,Medium,Low,Average,No,Medium,Yes,Zaid,Drought,3763,263,3.2,Today,2067,1990,2026-07-25
+Uttar Pradesh,Varanasi,Azadpur,Cotton,PKV Rajat,9428,3416,3029,4601,Falling,Low,High,Average,Yes,Medium,No,Zaid,Normal,2630,346,4.6,Within 10 Days,3260,2951,2026-07-27
+Tamil Nadu,Madurai,Nashik,Chilli,Jwala Chilli,838,6915,6160,7621,Rising,Medium,Medium,Premium,No,High,Yes,Perennial,Drought,2059,233,3.2,Within 10 Days,7271,7667,2026-07-25
+Bihar,Arrah,Coimbatore,Onion,Ratnagiri Red,2656,2507,2231,2805,Falling,Medium,Medium,Premium,No,Low,No,Rabi,Flood,4504,275,3.2,Within 3 Days,2374,2139,2026-07-31
+Tamil Nadu,Tirunelveli,Warangal,Cotton,Bunny Bt,501,4213,3534,4683,Falling,High,Medium,Good,No,Low,No,Zaid,Flood,4280,19,4.6,Within 3 Days,4074,3758,2026-07-29
+Chhattisgarh,Durg,Belagavi,Soybean,PK-416,58,5289,4006,6399,Rising,High,Low,Good,No,Medium,No,Perennial,Flood,4193,373,4.7,Within 3 Days,5636,5820,2026-07-26
+Bihar,Begusarai,Chennai,Turmeric,Salem Turmeric,5378,6548,5342,8663,Stable,High,Low,Good,Yes,Low,No,Zaid,Cold Wave,1025,89,4.4,Hold for 30 Days,6582,6725,2026-07-29
+Tamil Nadu,Chennai,Mysuru,Pulses,Toor Dal,10186,7993,6252,9659,Stable,Low,Low,Premium,Yes,High,Yes,Kharif,Heatwave,2552,110,3.5,Within 10 Days,8101,8056,2026-08-01
+Bihar,Katihar,Jaipur,Chilli,Mathania Chilli,234,3850,3159,5051,Falling,Medium,High,Good,No,Medium,No,Kharif,Drought,1239,55,4.1,Next Week,3575,3370,2026-08-01
+Gujarat,Amreli,Karnal,Soybean,Non-GMO Soybean,3986,2493,1996,2758,Stable,Medium,High,Premium,No,High,No,Zaid,Drought,3376,66,3.1,Within 3 Days,2518,2514,2026-07-26
+Tamil Nadu,Thoothukudi,Ludhiana,Cotton,Surabhi,1353,6031,4552,7545,Rising,Medium,Low,Premium,No,Medium,Yes,Rabi,Heavy Rain,4844,338,4.6,Next Week,6357,6601,2026-07-23
+Tamil Nadu,Madurai,Varanasi,Sugarcane,Co-0238,738,499,377,648,Stable,High,Low,Average,No,Medium,Yes,Kharif,Drought,792,251,3.5,Next Week,505,493,2026-07-28
+West Bengal,Asansol,Ahmedabad,Millet,Ragi Millet,711,1696,1297,2151,Rising,Low,Low,Premium,No,Low,No,Rabi,Heavy Rain,4435,167,4.8,Next Week,1794,1946,2026-07-26
+Haryana,Rohtak,Chennai,Chilli,Kashmiri Chilli,7583,3641,3130,3934,Stable,Low,Medium,Good,Yes,High,Yes,Rabi,Heatwave,3684,289,4.8,Within 10 Days,3639,3601,2026-08-01
+Bihar,Gaya,Hyderabad,Rice,MTU-1010,2803,3755,3063,4906,Stable,High,Medium,Average,Yes,Medium,Yes,Perennial,Flood,3334,103,3.9,Within 3 Days,3791,3852,2026-07-23
+Chhattisgarh,Rajnandgaon,Belagavi,Maize,HQPM-1,5017,1069,808,1296,Falling,Low,High,Average,Yes,High,Yes,Rabi,Cold Wave,3544,61,4.7,Hold for 30 Days,1015,926,2026-07-30
+Telangana,Rangareddy,Chennai,Soybean,Non-GMO Soybean,575,2999,2685,3952,Falling,Low,High,Average,No,High,Yes,Kharif,Drought,4665,319,3.5,Hold for 30 Days,2917,2549,2026-07-27
+Telangana,Hyderabad,Coimbatore,Chilli,Mathania Chilli,1172,8675,7039,11146,Falling,High,Low,Average,Yes,Low,Yes,Zaid,Flood,3741,277,3.9,Today,8184,7664,2026-07-24
+Bihar,Patna,Patna,Potato,Kufri Chipsona,3973,1449,1163,1809,Rising,High,High,Premium,Yes,High,No,Perennial,Flood,496,308,4.6,Next Week,1551,1557,2026-07-26
+Punjab,Bathinda,Lucknow,Wheat,Lokwan Wheat,3302,4135,3638,5163,Stable,High,High,Average,Yes,Low,Yes,Kharif,Drought,573,198,3.6,Within 10 Days,4063,3980,2026-07-26
+Maharashtra,Sangli,Jaipur,Grapes,Thompson Grapes,2825,5233,4282,6523,Falling,High,Low,Good,Yes,High,Yes,Perennial,Heavy Rain,3445,242,4.6,Hold for 30 Days,5008,4625,2026-07-23
+Bihar,Patna,Salem,Millet,Ragi Millet,838,3027,2305,3914,Stable,High,High,Premium,Yes,High,No,Zaid,Drought,3748,251,4.4,Hold for 15 Days,2988,2917,2026-08-02
+Maharashtra,Kolhapur,Solapur,Grapes,Flame Seedless,5911,3083,2558,3831,Rising,Medium,Low,Good,No,Low,Yes,Rabi,Cold Wave,769,126,4.0,Hold for 30 Days,3303,3367,2026-07-30
+Punjab,Jalandhar,Varanasi,Maize,Yellow Maize,10992,1665,1444,2181,Falling,Medium,Low,Average,No,Low,No,Perennial,Heatwave,2992,88,3.2,Today,1581,1568,2026-07-23
+Punjab,Jalandhar,Salem,Tomato,Deshi Tomato,3058,3122,2439,4206,Rising,Medium,Low,Good,Yes,Medium,Yes,Zaid,Flood,545,289,3.2,Next Week,3266,3475,2026-07-28
+Maharashtra,Nashik,Belagavi,Tomato,Cherry Tomato,3637,4199,3324,4757,Falling,Medium,Low,Premium,No,High,Yes,Kharif,Heatwave,1424,199,4.3,Today,3948,3657,2026-07-26
+Punjab,Bathinda,Varanasi,Banana,Dwarf Cavendish,8683,1480,1146,1967,Rising,Low,Medium,Premium,Yes,Low,No,Zaid,Heatwave,2904,311,3.9,Within 10 Days,1531,1560,2026-07-24
+Andhra Pradesh,Vijayawada,Coimbatore,Pulses,Urad Dal,5418,4693,4199,6295,Falling,High,High,Good,Yes,Low,Yes,Perennial,Heatwave,831,90,4.0,Within 10 Days,4529,4164,2026-07-25
+Rajasthan,Jodhpur,Indore,Banana,Nendran,7968,2286,1870,3037,Falling,Low,Medium,Average,Yes,Medium,Yes,Rabi,Cold Wave,1962,236,4.7,Hold for 15 Days,2133,2040,2026-07-27
+Andhra Pradesh,Visakhapatnam,Warangal,Banana,Rasthali,397,2651,2146,3281,Falling,High,High,Good,No,Medium,No,Perennial,Drought,4130,226,3.8,Hold for 15 Days,2489,2354,2026-07-31
+Rajasthan,Bikaner,Sangli,Maize,Yellow Maize,1256,916,809,1218,Stable,Low,Low,Premium,Yes,Low,Yes,Zaid,Heavy Rain,613,284,3.4,Within 3 Days,922,893,2026-07-23
+West Bengal,Siliguri,Belagavi,Sugarcane,Co-13006,8948,331,292,393,Falling,Medium,High,Good,Yes,Medium,No,Rabi,Cold Wave,3556,121,3.5,Within 10 Days,308,289,2026-07-24
+Bihar,Katihar,Bhopal,Turmeric,Nanded Turmeric,1445,8417,7660,10039,Falling,High,Medium,Good,No,High,Yes,Zaid,Flood,1438,300,4.7,Next Week,8220,7162,2026-07-23
+West Bengal,Malda,Indore,Potato,Chandrakhi,2858,1393,1183,1717,Falling,Medium,Low,Premium,Yes,Low,Yes,Zaid,Flood,4954,327,4.6,Hold for 30 Days,1329,1238,2026-07-27
+Punjab,Hoshiarpur,Pune,Pulses,Masoor Dal,7828,6894,5279,7639,Falling,High,Medium,Average,Yes,Low,Yes,Perennial,Heatwave,519,100,3.4,Hold for 15 Days,6459,6020,2026-07-23
+Tamil Nadu,Chennai,Salem,Wheat,Lokwan Wheat,95,3269,3001,3644,Falling,High,Medium,Good,No,Medium,Yes,Perennial,Drought,1991,71,4.7,Next Week,3092,3010,2026-07-26
+Gujarat,Patan,Ahmedabad,Garlic,G-4,8282,4816,3618,5386,Falling,Low,Low,Premium,No,Medium,Yes,Zaid,Heatwave,4963,256,3.9,Hold for 30 Days,4442,4137,2026-07-23
+Chhattisgarh,Jagdalpur,Kota,Garlic,G-282,3422,8903,7370,11804,Rising,High,Medium,Premium,Yes,High,No,Kharif,Drought,2263,85,3.5,Within 10 Days,9368,9941,2026-08-01
+Odisha,Berhampur,Warangal,Groundnut,TAG-24,546,4093,3355,4602,Stable,Medium,High,Premium,Yes,High,No,Kharif,Drought,899,332,4.4,Within 10 Days,4086,4029,2026-07-27
+West Bengal,Asansol,Ludhiana,Wheat,Basmati Wheat,1928,3136,2610,3444,Stable,Low,High,Average,Yes,Medium,No,Rabi,Normal,4156,147,4.7,Within 3 Days,3178,3169,2026-07-31
+Haryana,Kurukshetra,Hyderabad,Mango,Langra Mango,2800,5443,4413,6196,Rising,High,Low,Premium,Yes,Medium,No,Kharif,Heavy Rain,4583,333,4.3,Within 10 Days,5844,5927,2026-07-29
+Rajasthan,Jaipur,Jaipur,Rice,Basmati Rice,3192,2709,2073,3234,Rising,High,High,Premium,No,Medium,Yes,Kharif,Flood,2106,54,4.6,Within 10 Days,2790,2889,2026-07-27
+Tamil Nadu,Chennai,Lucknow,Chilli,Kashmiri Chilli,2617,8398,7638,9343,Stable,High,Low,Premium,Yes,High,No,Zaid,Drought,1722,12,3.8,Next Week,8234,8156,2026-07-30
+Karnataka,Gadag,Mysuru,Banana,Grand Naine,3676,2901,2660,3212,Stable,High,Medium,Average,Yes,Medium,No,Kharif,Heavy Rain,2957,328,4.4,Within 10 Days,2950,2979,2026-07-31
+Uttar Pradesh,Lucknow,Mysuru,Chilli,Teja Chilli,326,5829,4750,7303,Stable,Medium,High,Premium,Yes,Low,Yes,Kharif,Flood,1316,163,3.5,Hold for 15 Days,5888,5898,2026-08-02
+Gujarat,Bhavnagar,Guntur,Garlic,Yamuna Safed-3,6206,11685,10727,14019,Rising,High,Low,Good,Yes,High,No,Zaid,Heatwave,624,271,4.6,Hold for 15 Days,12373,12606,2026-08-02
+Punjab,Bathinda,Indore,Potato,Kufri Pukhraj,271,806,687,953,Stable,Low,High,Good,Yes,Low,No,Kharif,Drought,829,256,3.1,Within 3 Days,791,845,2026-07-30
+Gujarat,Surendranagar,Hubli,Pulses,Moong Dal,8363,6958,5412,7885,Falling,High,Medium,Good,Yes,Low,Yes,Zaid,Heatwave,2637,300,3.9,Within 10 Days,6485,6514,2026-07-26
+Karnataka,Bijapur,Ludhiana,Mango,Langra Mango,1857,4702,4134,6118,Stable,Medium,Low,Good,Yes,Low,No,Perennial,Flood,981,393,4.8,Next Week,4719,4538,2026-07-31
+Haryana,Jind,Salem,Garlic,G-282,6196,5823,4502,7026,Rising,Low,Low,Premium,Yes,Medium,Yes,Kharif,Normal,4401,378,4.5,Hold for 15 Days,6080,6356,2026-07-27
+Odisha,Puri,Ludhiana,Groundnut,K-6,9688,5535,5028,6220,Rising,High,Medium,Good,No,High,No,Perennial,Cold Wave,3316,361,3.1,Hold for 15 Days,5953,6218,2026-07-30
+Rajasthan,Jaipur,Warangal,Banana,Dwarf Cavendish,11132,2279,1810,2741,Stable,High,Low,Average,Yes,Low,No,Rabi,Cold Wave,1622,11,3.2,Today,2292,2374,2026-07-27
+Odisha,Koraput,Visakhapatnam,Maize,HQPM-1,6979,1390,1160,1701,Stable,High,Medium,Good,No,Medium,No,Kharif,Heatwave,1195,330,4.1,Next Week,1407,1357,2026-07-30
+Chhattisgarh,Raigarh,Kolkata,Garlic,Large Bulb Garlic,8106,7880,6613,9902,Stable,High,High,Average,No,High,Yes,Rabi,Heatwave,3369,100,4.4,Within 3 Days,7875,7882,2026-08-01
+Rajasthan,Pali,Lucknow,Tomato,Deshi Tomato,1016,2416,1993,3204,Falling,Low,High,Premium,Yes,High,Yes,Zaid,Heatwave,1002,198,3.2,Today,2272,2195,2026-07-26
+Rajasthan,Kota,Lasalgaon,Wheat,Lokwan Wheat,2775,3650,3228,4312,Rising,Low,High,Average,No,High,No,Perennial,Heavy Rain,3060,314,3.9,Next Week,3872,3957,2026-07-28
+West Bengal,Asansol,Kota,Mango,Chausa Mango,284,4808,4317,5714,Rising,Medium,Medium,Premium,Yes,High,Yes,Zaid,Drought,2336,193,3.9,Within 10 Days,5094,5276,2026-07-27
+Telangana,Karimnagar,Lasalgaon,Chilli,Guntur Chilli,5951,8144,6431,9860,Stable,High,Low,Average,Yes,Medium,No,Perennial,Cold Wave,4200,342,4.7,Today,8220,7976,2026-07-30
+Odisha,Rourkela,Coimbatore,Millet,Little Millet,8317,1880,1676,2536,Rising,High,High,Good,Yes,Medium,No,Kharif,Cold Wave,4249,344,4.1,Within 3 Days,1941,2115,2026-07-23
+Odisha,Cuttack,Nashik,Grapes,Cheema Saheb,706,5145,4084,6218,Rising,Medium,Medium,Average,Yes,Medium,Yes,Perennial,Heavy Rain,1040,359,3.7,Within 3 Days,5535,5796,2026-07-24
+Karnataka,Bijapur,Ludhiana,Mango,Bangalora Mango,9256,2942,2352,3265,Falling,Medium,High,Good,Yes,High,Yes,Zaid,Cold Wave,1343,165,4.9,Hold for 30 Days,2836,2592,2026-07-24
+Tamil Nadu,Madurai,Coimbatore,Mango,Chausa Mango,6030,3797,3229,4210,Stable,Low,High,Premium,No,Low,No,Rabi,Normal,2731,117,4.0,Hold for 15 Days,3743,3714,2026-07-23
+West Bengal,Kolkata,Jaipur,Chilli,Kashmiri Chilli,2870,7725,6622,8792,Stable,High,Medium,Good,No,Low,Yes,Zaid,Drought,1550,371,3.4,Within 10 Days,7859,7512,2026-08-02
+Chhattisgarh,Bilaspur,Coimbatore,Groundnut,Phule Pragati,1275,3707,2992,4682,Stable,Low,High,Good,No,High,No,Kharif,Flood,4624,377,3.6,Within 10 Days,3769,3781,2026-07-25
+Madhya Pradesh,Kota,Kolhapur,Chilli,Jwala Chilli,3530,3519,2984,4220,Stable,Low,Medium,Good,No,Medium,Yes,Rabi,Heavy Rain,2086,388,3.4,Within 10 Days,3449,3598,2026-07-24
+Karnataka,Mysuru,Ludhiana,Grapes,Cheema Saheb,972,2776,2137,3384,Rising,High,Medium,Good,No,Medium,Yes,Perennial,Heatwave,2307,22,3.2,Hold for 15 Days,2912,3105,2026-07-31
+Telangana,Nalgonda,Bhopal,Maize,DMH-1,6310,1403,1055,1559,Falling,Medium,Low,Premium,No,Low,Yes,Kharif,Cold Wave,4993,298,4.0,Within 10 Days,1353,1303,2026-07-31
+Madhya Pradesh,Dewas,Mysuru,Grapes,Sharad Seedless,562,6902,5807,8209,Stable,High,Medium,Average,Yes,High,No,Perennial,Drought,823,270,4.7,Hold for 30 Days,6961,7102,2026-08-01
+Bihar,Muzaffarpur,Chennai,Cotton,Bt Cotton,2897,4954,3819,5522,Falling,High,High,Premium,Yes,Low,Yes,Zaid,Drought,586,48,5.0,Hold for 30 Days,4646,4689,2026-07-31
+Madhya Pradesh,Indore,Nagpur,Garlic,Large Bulb Garlic,3755,5109,4332,6476,Falling,Medium,Low,Average,No,Low,Yes,Kharif,Drought,666,126,3.1,Within 3 Days,4792,4768,2026-07-31
+Andhra Pradesh,Nellore,Belagavi,Banana,Rasthali,11995,1889,1500,2371,Stable,Low,Medium,Premium,No,High,No,Kharif,Heatwave,2382,351,3.9,Within 10 Days,1862,1833,2026-07-23
+Odisha,Sambalpur,Mysuru,Tomato,Arka Saurabh,9284,1749,1436,1961,Stable,Low,Low,Good,No,Low,Yes,Rabi,Normal,935,143,3.2,Today,1761,1732,2026-07-28
+Telangana,Warangal,Kota,Chilli,Kashmiri Chilli,3748,4573,3724,5068,Falling,Medium,High,Premium,Yes,High,No,Perennial,Heatwave,1082,275,3.7,Hold for 30 Days,4444,4139,2026-07-24
+Karnataka,Hubli,Hubli,Chilli,Mathania Chilli,5705,5701,4737,6353,Stable,Low,Low,Premium,Yes,Low,Yes,Rabi,Heatwave,3403,295,4.5,Today,5796,5780,2026-07-28
+Odisha,Berhampur,Chennai,Grapes,Cheema Saheb,799,3374,2688,4033,Stable,Medium,Medium,Average,Yes,Medium,No,Kharif,Flood,2803,213,4.5,Today,3392,3231,2026-07-30
+Karnataka,Mysuru,Ahmedabad,Wheat,Basmati Wheat,4733,4004,3637,4471,Falling,Low,Medium,Good,Yes,High,No,Kharif,Cold Wave,1857,386,3.0,Hold for 15 Days,3852,3703,2026-07-30
+Odisha,Jharsuguda,Chennai,Wheat,HD-2967,740,2577,2093,2875,Rising,Low,Low,Good,Yes,High,No,Perennial,Flood,3405,92,3.7,Today,2680,2880,2026-07-25
+West Bengal,Howrah,Solapur,Garlic,G-282,4387,8443,6897,11222,Stable,High,High,Average,Yes,Low,No,Perennial,Normal,771,187,3.0,Hold for 15 Days,8385,8319,2026-08-02
+Uttar Pradesh,Lucknow,Ludhiana,Banana,Grand Naine,1814,2526,2280,3008,Stable,Medium,High,Good,Yes,High,Yes,Zaid,Heavy Rain,2152,245,3.8,Next Week,2512,2625,2026-07-25
+Bihar,Darbhanga,Nashik,Turmeric,Nanded Turmeric,712,4051,3285,5327,Falling,High,Medium,Premium,Yes,Low,Yes,Zaid,Flood,629,73,3.8,Within 10 Days,3807,3456,2026-07-23
+Punjab,Gurdaspur,Chennai,Onion,Red Onion,2053,1122,903,1443,Stable,Low,Medium,Good,No,Low,Yes,Kharif,Flood,1183,15,3.3,Next Week,1122,1152,2026-07-30
+Maharashtra,Solapur,Karnal,Rice,Ponni Rice,1235,3095,2646,3951,Falling,Medium,Medium,Premium,Yes,High,No,Kharif,Flood,2458,363,3.5,Hold for 15 Days,2884,2849,2026-08-01
+Odisha,Jharsuguda,Jaipur,Soybean,JS-335,2626,2246,1837,2591,Rising,Low,High,Premium,Yes,High,No,Kharif,Drought,1935,51,4.7,Hold for 15 Days,2345,2427,2026-07-23
+Punjab,Jalandhar,Indore,Grapes,Manik Chaman,2138,3206,2551,3705,Falling,Medium,Low,Good,No,High,Yes,Zaid,Heavy Rain,689,98,3.1,Today,3076,2828,2026-07-29
+Rajasthan,Udaipur,Warangal,Cotton,PKV Rajat,4183,3956,3032,4287,Falling,Medium,Medium,Average,Yes,Medium,No,Zaid,Heatwave,3260,385,4.6,Hold for 30 Days,3783,3456,2026-07-29
+Punjab,Moga,Ludhiana,Maize,Hybrid Maize,10364,1542,1410,2033,Rising,Low,Low,Premium,Yes,High,No,Kharif,Heatwave,913,284,4.2,Next Week,1639,1771,2026-07-30
+Tamil Nadu,Coimbatore,Azadpur,Sugarcane,Co-118,2304,317,261,403,Falling,Low,Medium,Good,Yes,Low,No,Perennial,Flood,4590,262,4.6,Within 3 Days,303,291,2026-07-31
+Haryana,Karnal,Ahmedabad,Wheat,WH-1105,6562,2757,2145,3536,Stable,Medium,Low,Good,No,Low,No,Zaid,Heatwave,1995,99,3.0,Hold for 30 Days,2725,2811,2026-07-25
+Rajasthan,Sikar,Kolkata,Millet,Ragi Millet,3659,1587,1236,1733,Stable,Medium,Low,Premium,No,Medium,Yes,Rabi,Normal,2575,73,3.5,Today,1596,1547,2026-07-30
+Tamil Nadu,Chennai,Lasalgaon,Banana,Dwarf Cavendish,1561,1836,1602,2185,Stable,Medium,High,Average,No,Low,No,Kharif,Drought,385,187,3.4,Next Week,1812,1922,2026-07-25
+Telangana,Rangareddy,Nashik,Mango,Bangalora Mango,10310,5464,4508,6379,Rising,Low,Low,Premium,No,Low,Yes,Perennial,Normal,2198,378,4.5,Next Week,5621,5998,2026-07-26
+Gujarat,Kheda,Hubli,Soybean,JS-335,2059,1868,1499,2463,Falling,Low,High,Good,Yes,Low,Yes,Rabi,Drought,890,223,3.5,Within 10 Days,1827,1606,2026-07-25
+Gujarat,Ahmedabad,Jaipur,Cotton,PKV Rajat,134,4182,3313,4610,Rising,High,High,Premium,Yes,Low,Yes,Kharif,Flood,4743,381,4.6,Within 10 Days,4286,4449,2026-07-24
+Chhattisgarh,Jagdalpur,Lucknow,Soybean,MAUS-61,7896,4345,3456,5330,Stable,High,High,Premium,Yes,High,Yes,Zaid,Normal,1140,266,4.8,Hold for 15 Days,4282,4524,2026-08-02
+Punjab,Hoshiarpur,Ludhiana,Sugarcane,Co-0238,4749,389,324,524,Stable,High,Low,Premium,Yes,Medium,No,Zaid,Cold Wave,924,320,3.7,Next Week,395,405,2026-08-02
+Andhra Pradesh,Visakhapatnam,Hubli,Grapes,Flame Seedless,9874,6239,5408,7790,Rising,High,Low,Good,No,Medium,Yes,Zaid,Normal,4389,343,3.7,Next Week,6667,6994,2026-08-01
+Bihar,Patna,Coimbatore,Sugarcane,Co-13006,5297,462,410,513,Stable,High,Medium,Good,No,Medium,Yes,Kharif,Heatwave,2946,70,3.4,Hold for 15 Days,459,461,2026-07-26
+Odisha,Balasore,Jaipur,Chilli,Byadgi Chilli,4078,7213,6064,8827,Falling,Medium,Medium,Premium,No,Low,Yes,Perennial,Cold Wave,4616,300,4.6,Within 10 Days,6730,6193,2026-07-28
+Maharashtra,Nagpur,Coimbatore,Rice,Sona Masuri,1991,3731,3336,4902,Falling,High,High,Premium,No,High,No,Rabi,Drought,4817,220,3.5,Within 3 Days,3445,3222,2026-07-31
+Madhya Pradesh,Indore,Kolkata,Grapes,Sharad Seedless,2922,5252,4686,6906,Rising,High,Low,Premium,Yes,Low,No,Rabi,Heavy Rain,947,130,3.2,Hold for 30 Days,5618,5733,2026-07-31
+Rajasthan,Jodhpur,Patna,Millet,Kodo Millet,7753,3080,2647,3337,Falling,Medium,Low,Premium,Yes,Medium,Yes,Kharif,Normal,1721,262,3.3,Hold for 15 Days,2987,2827,2026-07-26
+Tamil Nadu,Tiruchirappalli,Warangal,Millet,Ragi Millet,3774,2041,1661,2728,Rising,Medium,High,Average,Yes,Medium,No,Kharif,Cold Wave,2093,205,3.4,Within 10 Days,2201,2266,2026-08-01
+West Bengal,Haldia,Guntur,Chilli,Teja Chilli,6687,6211,4863,6889,Falling,Medium,High,Premium,No,High,No,Kharif,Cold Wave,2262,149,3.3,Today,5738,5650,2026-07-29
+Punjab,Firozpur,Belagavi,Wheat,Sharbati Wheat,1443,4298,3256,5006,Stable,Low,Low,Good,Yes,High,No,Zaid,Normal,3561,261,3.4,Hold for 15 Days,4336,4501,2026-07-23
+Karnataka,Bijapur,Karnal,Millet,Bajra Millet,3357,2251,1912,2948,Falling,High,High,Good,Yes,Low,Yes,Perennial,Drought,945,325,3.2,Within 10 Days,2102,1961,2026-07-23
+Telangana,Nizamabad,Bhopal,Soybean,Co-1,3034,3099,2737,3630,Falling,Low,Low,Good,No,Low,Yes,Perennial,Drought,2258,111,5.0,Hold for 30 Days,2865,2681,2026-07-23
+Rajasthan,Kota,Varanasi,Rice,Parmal Rice,9014,3900,3037,4523,Falling,High,Medium,Premium,No,High,No,Zaid,Normal,1030,41,3.4,Hold for 15 Days,3648,3499,2026-07-29
+Bihar,Begusarai,Mysuru,Sugarcane,Co-86032 Sugarcane,2049,441,394,585,Falling,High,Medium,Premium,No,Medium,No,Zaid,Drought,3361,47,4.4,Hold for 30 Days,417,413,2026-07-23
+Maharashtra,Latur,Mysuru,Wheat,WH-1105,11514,2851,2320,3517,Rising,Low,High,Premium,Yes,High,No,Perennial,Heatwave,1065,183,3.9,Within 10 Days,2999,3226,2026-08-01
+Karnataka,Mysuru,Patna,Cotton,PKV Rajat,867,5392,4957,6531,Falling,Medium,Medium,Average,No,High,Yes,Zaid,Flood,4023,24,4.1,Hold for 15 Days,5007,4698,2026-07-24
+Maharashtra,Latur,Bhopal,Mango,Alphonso Mango,7096,5993,4518,7699,Rising,Medium,High,Good,No,High,No,Rabi,Normal,984,77,3.1,Hold for 15 Days,6142,6816,2026-07-26
+West Bengal,Kharagpur,Kurnool,Tomato,Arka Saurabh,3065,4434,3549,5026,Falling,High,High,Good,No,Medium,No,Rabi,Normal,3878,186,4.8,Hold for 30 Days,4182,3773,2026-07-24
+Punjab,Fatehgarh Sahib,Patna,Sugarcane,Co-0238,5235,421,377,467,Rising,High,High,Average,No,Medium,No,Kharif,Cold Wave,3990,69,4.3,Within 10 Days,453,446,2026-07-30
+Odisha,Berhampur,Karnal,Pulses,Moong Dal,1596,10403,9491,12275,Rising,High,Medium,Good,Yes,High,No,Zaid,Drought,4413,68,4.4,Within 10 Days,11234,11353,2026-07-28
+Uttar Pradesh,Aligarh,Karnal,Millet,Ragi Millet,3844,1796,1515,2018,Falling,High,Medium,Good,No,Medium,No,Perennial,Heavy Rain,2620,364,4.2,Today,1759,1671,2026-08-01
+Karnataka,Hubli,Jaipur,Grapes,Thompson Grapes,3121,4132,3452,5361,Stable,Low,Low,Average,No,High,No,Rabi,Flood,2125,237,4.1,Today,4081,4119,2026-08-01
+Uttar Pradesh,Ghaziabad,Karnal,Mango,Alphonso Mango,3718,3045,2442,4030,Stable,Low,Medium,Good,Yes,Medium,Yes,Perennial,Normal,567,12,3.1,Next Week,3086,3050,2026-07-24
+Uttar Pradesh,Bareilly,Hubli,Grapes,Sonaka Grapes,1653,3049,2702,3768,Falling,High,Low,Premium,No,Low,Yes,Perennial,Drought,2906,269,3.3,Within 3 Days,2823,2835,2026-07-25
+Karnataka,Raichur,Varanasi,Mango,Bangalora Mango,9108,3645,2749,3947,Rising,High,Medium,Average,Yes,High,Yes,Kharif,Normal,4984,200,3.1,Within 10 Days,3746,3992,2026-07-23
+Bihar,Purnia,Hubli,Potato,Kufri Chipsona,4914,1911,1683,2404,Stable,High,Low,Good,Yes,High,Yes,Kharif,Heatwave,1147,61,3.9,Hold for 30 Days,1882,1842,2026-07-29
+Chhattisgarh,Bilaspur,Pune,Maize,DMH-1,3457,1190,907,1593,Rising,Medium,High,Premium,Yes,Medium,No,Perennial,Normal,2868,329,4.8,Within 3 Days,1226,1250,2026-07-31
+Telangana,Rangareddy,Mysuru,Wheat,Basmati Wheat,5731,2442,1897,3126,Stable,Medium,Low,Premium,Yes,Low,Yes,Kharif,Normal,4543,267,4.5,Within 3 Days,2477,2347,2026-07-30
+Maharashtra,Solapur,Kolhapur,Potato,Kufri Jyoti,11381,1159,1057,1360,Falling,High,Medium,Average,No,Medium,No,Perennial,Cold Wave,3872,267,4.9,Within 3 Days,1083,1008,2026-07-29
+Madhya Pradesh,Kota,Ahmedabad,Garlic,Yamuna Safed-3,11880,8385,7353,10902,Falling,Medium,Medium,Average,Yes,Medium,No,Perennial,Heatwave,1936,295,3.7,Within 10 Days,8126,7504,2026-08-02
+Tamil Nadu,Tiruchirappalli,Ahmedabad,Grapes,Sharad Seedless,3436,2170,1669,2817,Falling,Low,Low,Good,Yes,Medium,No,Rabi,Drought,895,115,4.3,Next Week,2015,1912,2026-08-02
+Uttar Pradesh,Agra,Kolkata,Chilli,Byadgi Chilli,2374,5362,4280,6098,Rising,Medium,High,Premium,Yes,Low,No,Kharif,Flood,3754,354,4.5,Next Week,5730,5736,2026-08-02
+Bihar,Begusarai,Guntur,Wheat,Lokwan Wheat,538,4474,3805,5117,Stable,High,Medium,Premium,No,High,Yes,Kharif,Flood,4082,150,3.3,Hold for 15 Days,4391,4488,2026-07-25
+Maharashtra,Solapur,Mysuru,Rice,Basmati Rice,439,3408,2992,4049,Falling,Medium,Low,Average,No,Medium,No,Kharif,Flood,3522,157,4.4,Hold for 15 Days,3236,3115,2026-08-01
+West Bengal,Malda,Jaipur,Cotton,MCU-5,833,7189,6276,8203,Falling,High,High,Premium,Yes,High,No,Kharif,Heatwave,730,137,4.8,Today,6661,6791,2026-08-01
+Haryana,Fatehabad,Kolkata,Mango,Dasheri Mango,2840,3815,3068,4272,Rising,High,Low,Average,No,Medium,No,Kharif,Cold Wave,4574,275,3.5,Hold for 15 Days,4042,4378,2026-07-28
+Bihar,Begusarai,Nagpur,Maize,Yellow Maize,11705,1811,1557,2374,Rising,High,Medium,Average,Yes,Low,Yes,Perennial,Normal,793,113,3.0,Within 3 Days,1898,1971,2026-07-26
+Karnataka,Bijapur,Belagavi,Millet,Little Millet,5158,1898,1457,2116,Rising,Low,Medium,Good,No,Low,No,Rabi,Normal,3578,101,3.1,Hold for 15 Days,1954,2051,2026-07-24
+Telangana,Warangal,Kolhapur,Turmeric,High Curcumin Turmeric,1855,4752,3587,5981,Rising,High,High,Good,No,Medium,No,Kharif,Cold Wave,4808,48,3.7,Within 3 Days,4889,5228,2026-07-25
+Uttar Pradesh,Agra,Salem,Onion,Nasik Red,251,1354,1083,1609,Falling,Low,Medium,Average,No,Low,No,Perennial,Heavy Rain,1194,353,3.1,Within 3 Days,1323,1180,2026-08-02
+Chhattisgarh,Raipur,Ahmedabad,Onion,White Onion,2229,3107,2537,3440,Stable,High,Medium,Average,No,High,No,Rabi,Heavy Rain,1701,109,3.7,Next Week,3132,3041,2026-08-02
+Karnataka,Mysuru,Kurnool,Groundnut,Phule Pragati,11321,3191,2483,3732,Stable,High,High,Good,Yes,Medium,Yes,Perennial,Normal,3805,176,3.0,Next Week,3239,3085,2026-08-02
+Andhra Pradesh,Anantapur,Guntur,Rice,Ponni Rice,7792,5218,4792,6812,Stable,High,High,Average,Yes,High,Yes,Kharif,Heatwave,1119,160,4.6,Next Week,5208,5340,2026-07-25
+Haryana,Kaithal,Sangli,Banana,Poovan,3440,3325,2786,4187,Falling,Medium,Medium,Average,No,Low,Yes,Zaid,Heavy Rain,4554,377,4.3,Within 3 Days,3254,3110,2026-07-23
+Gujarat,Bhavnagar,Guntur,Rice,Parmal Rice,3085,4120,3152,5473,Rising,Low,Medium,Good,Yes,Medium,No,Perennial,Drought,4616,94,3.5,Within 10 Days,4288,4462,2026-07-24
+Madhya Pradesh,Gwalior,Solapur,Tomato,Hybrid Tomato,2180,2528,2237,3117,Rising,Low,Medium,Good,No,Low,Yes,Kharif,Drought,4387,355,3.3,Within 10 Days,2601,2898,2026-07-24
+Tamil Nadu,Coimbatore,Solapur,Groundnut,K-6,3325,3321,2650,4118,Rising,Medium,High,Premium,No,Medium,No,Kharif,Heavy Rain,3825,185,4.3,Today,3397,3532,2026-07-29
+Bihar,Katihar,Chennai,Pulses,Moong Dal,2971,6335,5381,6979,Rising,Medium,High,Premium,Yes,Low,No,Zaid,Heavy Rain,2337,352,4.3,Hold for 15 Days,6613,7224,2026-07-29
+Chhattisgarh,Durg,Jaipur,Garlic,Yamuna Safed-3,1835,4363,3457,5202,Rising,Low,Medium,Premium,No,Low,No,Kharif,Drought,2735,295,4.9,Hold for 15 Days,4593,4745,2026-07-27

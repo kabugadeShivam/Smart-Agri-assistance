@@ -1,0 +1,138 @@
+import sqlite3
+from pathlib import Path
+
+# ------------------------------------
+# Database Path
+# ------------------------------------
+
+ROOT = Path(__file__).resolve().parent.parent
+
+DB_PATH = ROOT / "database" / "farmers.db"
+
+# ------------------------------------
+# Connection
+# ------------------------------------
+
+def get_connection():
+
+    conn = sqlite3.connect(DB_PATH)
+
+    conn.row_factory = sqlite3.Row
+
+    return conn
+
+# ------------------------------------
+# Create Tables
+# ------------------------------------
+
+def initialize_database():
+
+    conn = get_connection()
+
+    cursor = conn.cursor()
+
+    # -------------------------------
+    # Farmer Login Table
+    # -------------------------------
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS farmers(
+
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+        name TEXT NOT NULL,
+
+        mobile TEXT UNIQUE,
+
+        email TEXT UNIQUE,
+
+        password TEXT,
+
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+    )
+    """)
+
+    # -------------------------------
+    # Farm Profile
+    # -------------------------------
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS farm_profile(
+
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+        farmer_id INTEGER,
+
+        state TEXT,
+
+        district TEXT,
+
+        village TEXT,
+
+        land_area REAL,
+
+        soil_type TEXT,
+
+        irrigation_type TEXT,
+
+        water_source TEXT,
+
+        main_crop TEXT,
+
+        latitude REAL,
+
+        longitude REAL,
+
+        FOREIGN KEY(farmer_id)
+
+        REFERENCES farmers(id)
+
+    )
+    """)
+
+    # -------------------------------
+    # Prediction History
+    # -------------------------------
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS prediction_history(
+
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+        farmer_id INTEGER,
+
+        prediction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+        disease TEXT,
+
+        disease_confidence REAL,
+
+        fertilizer TEXT,
+
+        yield_prediction REAL,
+
+        production REAL,
+
+        revenue REAL,
+
+        weather TEXT,
+
+        temperature REAL,
+
+        humidity REAL,
+
+        farm_health INTEGER,
+
+        FOREIGN KEY(farmer_id)
+
+        REFERENCES farmers(id)
+
+    )
+    """)
+
+    conn.commit()
+
+    conn.close()
+
+    print("Database Initialized Successfully")
