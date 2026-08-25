@@ -12,10 +12,9 @@ from utils.auth import (
 from utils.profile_manager import get_profile
 
 from utils.ai_data_manager import save_disease
-
 from utils.session_manager import save_prediction
-
 from utils.farmer_memory import save_memory
+
 
 # ============================================================
 # LOGIN CHECK
@@ -23,208 +22,406 @@ from utils.farmer_memory import save_memory
 
 if not is_logged_in():
 
-    st.warning("⚠ Please login first.")
+    st.warning("⚠️ Please login first.")
 
     st.stop()
 
-# ============================================================
-# LOAD PROFILE
-# ============================================================
-
-profile = get_profile(current_farmer())
 
 # ============================================================
-# PAGE CONFIG
+# PAGE CONFIGURATION
 # ============================================================
 
 st.set_page_config(
-    page_title="🌿 AI Disease Detection",
+    page_title="AI Plant Disease Detection",
     page_icon="🌿",
     layout="wide"
 )
 
-# ============================================================
-# PROFESSIONAL CSS
-# ============================================================
-
-st.markdown("""
-<style>
-
-.block-container{
-    padding-top:1rem;
-    padding-bottom:2rem;
-}
-
-.hero{
-    background:linear-gradient(90deg,#0f766e,#16a34a,#22c55e);
-    padding:28px;
-    border-radius:18px;
-    color:white;
-    box-shadow:0px 5px 18px rgba(0,0,0,.18);
-    margin-bottom:20px;
-}
-
-.metric-card{
-    background:#ffffff;
-    border-radius:15px;
-    padding:18px;
-    border:1px solid #EAEAEA;
-    box-shadow:0px 2px 10px rgba(0,0,0,.05);
-}
-
-.upload-box{
-    background:#f8fafc;
-    padding:18px;
-    border-radius:15px;
-    border:1px solid #E5E7EB;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 # ============================================================
-# HERO
+# LOAD FARMER PROFILE
 # ============================================================
 
-st.markdown("""
+farmer_id = current_farmer()
 
-<div class="hero">
+profile = get_profile(farmer_id)
 
-<h1>🌿 AI Plant Disease Detection</h1>
 
-<p style="font-size:18px">
+# ============================================================
+# SAFE PROFILE VALUES
+# ============================================================
 
-Upload a clear crop leaf image and let our Deep Learning AI instantly detect plant diseases,
-estimate confidence, calculate farm health, and provide treatment & prevention recommendations.
+def get_profile_value(profile_data, key, index, default="-"):
 
-</p>
+    try:
 
-</div>
+        if profile_data is None:
+            return default
 
-""", unsafe_allow_html=True)
+        # SQLite Row / dictionary
+        if hasattr(profile_data, "keys"):
+
+            value = profile_data[key]
+
+        else:
+
+            value = profile_data[index]
+
+        if value is None or str(value).strip() == "":
+            return default
+
+        return value
+
+    except (KeyError, IndexError, TypeError):
+
+        return default
+
+
+# Your farmer_profile table structure:
+#
+# 0  farmer_id
+# 1  farmer_name
+# 2  mobile
+# 3  state
+# 4  district
+# 5  village
+# 6  crop
+# 7  land_area
+# 8  soil_type
+# 9  irrigation
+# 10 farming_type
+# 11 age
+# 12 gender
+# 13 annual_income
+# 14 fpo_member
+# 15 created_at
+
+
+farmer_name = get_profile_value(
+    profile,
+    "farmer_name",
+    1
+)
+
+state = get_profile_value(
+    profile,
+    "state",
+    3
+)
+
+district = get_profile_value(
+    profile,
+    "district",
+    4
+)
+
+village = get_profile_value(
+    profile,
+    "village",
+    5
+)
+
+crop = get_profile_value(
+    profile,
+    "crop",
+    6
+)
+
+soil_type = get_profile_value(
+    profile,
+    "soil_type",
+    8
+)
+
+
+# ============================================================
+# CUSTOM CSS
+# ============================================================
+
+st.markdown(
+    """
+    <style>
+
+    .main-title {
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        padding: 30px;
+        border-radius: 18px;
+        background: linear-gradient(
+            135deg,
+            #166534,
+            #16a34a
+        );
+        color: white;
+        margin-bottom: 25px;
+    }
+
+    .hero h1 {
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        color: white;
+        font-size: 17px;
+    }
+
+    .info-card {
+        padding: 18px;
+        border-radius: 14px;
+        border: 1px solid #e5e7eb;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+# ============================================================
+# HERO SECTION
+# ============================================================
+
+st.markdown(
+    """
+    <div class="hero">
+
+        <h1>🌿 AI Plant Disease Detection</h1>
+
+        <p>
+        Upload a crop leaf image and let the AI model analyse
+        the plant condition, estimate prediction confidence,
+        assess farm health and provide treatment guidance.
+        </p>
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # ============================================================
 # FARMER INFORMATION
 # ============================================================
 
-st.subheader("👨‍🌾 Registered Farmer")
+st.subheader("👨‍🌾 Farmer & Farm Information")
 
-a,b,c,d = st.columns(4)
 
-a.metric(
-    "Farmer ID",
-    current_farmer()
-)
+c1, c2, c3, c4 = st.columns(4)
 
-b.metric(
-    "State",
-    profile["state"] if profile["state"] else "-"
-)
 
-c.metric(
-    "Crop",
-    profile["crop"] if profile["crop"] else "-"
-)
+with c1:
 
-d.metric(
-    "Soil",
-    profile["soil_type"] if profile["soil_type"] else "-"
-)
+    st.metric(
+        "Farmer",
+        str(farmer_name)
+    )
+
+
+with c2:
+
+    st.metric(
+        "State",
+        str(state)
+    )
+
+
+with c3:
+
+    st.metric(
+        "District",
+        str(district)
+    )
+
+
+with c4:
+
+    st.metric(
+        "Crop",
+        str(crop)
+    )
+
 
 st.divider()
 
+
 # ============================================================
-# TWO COLUMN LAYOUT
+# MAIN INPUT SECTION
 # ============================================================
 
-left,right = st.columns([1.2,1])
+upload_col, feature_col = st.columns(
+    [1.4, 1]
+)
 
-with left:
 
-    st.markdown("### 📤 Upload Leaf Image")
+# ============================================================
+# IMAGE UPLOAD
+# ============================================================
+
+with upload_col:
+
+    st.subheader("📤 Upload Crop Leaf")
 
     uploaded_file = st.file_uploader(
-        "Choose an Image",
-        type=["jpg","jpeg","png"]
+        "Choose a JPG, JPEG or PNG image",
+        type=[
+            "jpg",
+            "jpeg",
+            "png"
+        ],
+        help=(
+            "For best results, upload a clear close-up "
+            "image of the affected leaf."
+        )
     )
 
-    st.caption(
-        "Recommended: Clear close-up image captured in natural daylight."
-    )
 
-with right:
+# ============================================================
+# AI FEATURES
+# ============================================================
 
-    st.markdown("### 🤖 AI Analysis")
+with feature_col:
 
-    st.success("✔ Disease Classification")
+    st.subheader("🤖 AI Analysis")
 
-    st.success("✔ Confidence Score")
+    st.success("✅ Disease Classification")
 
-    st.success("✔ Farm Health Score")
+    st.success("✅ Confidence Score")
 
-    st.success("✔ Treatment Suggestion")
+    st.success("✅ Farm Health Assessment")
 
-    st.success("✔ Prevention Guide")
+    st.success("✅ Treatment Guidance")
 
-    st.success("✔ Farmer AI Memory")
+    st.success("✅ Prevention Guidance")
+
+    st.success("✅ Farmer AI Memory")
+
 
 st.divider()
+
+
+# ============================================================
+# DEFAULT DETECT VALUE
+# IMPORTANT:
+# This prevents NameError: detect is not defined
+# ============================================================
+
+detect = False
+
 
 # ============================================================
 # IMAGE PREVIEW
 # ============================================================
 
-detect = False
-
 if uploaded_file is not None:
 
-    original = Image.open(uploaded_file)
+    try:
 
-    image = original.convert("RGB")
+        original_image = Image.open(
+            uploaded_file
+        )
 
-    col1,col2 = st.columns([1.2,1])
+        image = original_image.convert(
+            "RGB"
+        )
 
-    with col1:
+    except Exception as e:
+
+        st.error(
+            f"❌ Unable to read the uploaded image: {e}"
+        )
+
+        st.stop()
+
+
+    preview_col, details_col = st.columns(
+        [1.4, 1]
+    )
+
+
+    # ========================================================
+    # IMAGE
+    # ========================================================
+
+    with preview_col:
+
+        st.subheader("🖼️ Image Preview")
 
         st.image(
             image,
+            caption="Uploaded Crop Leaf",
             use_container_width=True
         )
 
-    with col2:
 
-        st.subheader("📄 Image Details")
+    # ========================================================
+    # IMAGE DETAILS
+    # ========================================================
 
-        width,height = image.size
+    with details_col:
 
-        st.metric(
-            "Resolution",
-            f"{width} × {height}"
+        st.subheader("📋 Image Details")
+
+        width, height = image.size
+
+        st.write(
+            f"**File:** {uploaded_file.name}"
         )
 
         st.write(
-            "**Filename:**",
-            uploaded_file.name
+            f"**Resolution:** {width} × {height}"
         )
 
         st.write(
-            "**Format:**",
-            original.format
+            f"**Format:** {original_image.format or 'Unknown'}"
         )
 
         st.write(
-            "**Mode:**",
-            image.mode
+            f"**Color Mode:** {image.mode}"
         )
 
         st.info(
-            "The AI model will analyse the uploaded leaf and estimate disease severity."
+            "For better accuracy, use a clear image "
+            "with good lighting and minimal background."
         )
 
-        detect = st.button(
-            "🚀 Run AI Diagnosis",
-            use_container_width=True
-        )
+
+    st.divider()
+
+
+    # ========================================================
+    # DETECT BUTTON
+    # ========================================================
+
+    detect = st.button(
+        "🔍 Run AI Disease Diagnosis",
+        use_container_width=True,
+        type="primary"
+    )
+
+
+# ============================================================
+# NO IMAGE
+# ============================================================
+
+else:
+
+    st.info(
+        "📷 Upload a crop leaf image above to start AI diagnosis."
+    )
+
 
 # ============================================================
 # AI PREDICTION
@@ -232,253 +429,467 @@ if uploaded_file is not None:
 
 if detect:
 
-    with st.spinner("🧠 AI is analysing your crop..."):
+    # ========================================================
+    # PREDICTION
+    # ========================================================
 
-        disease, confidence = predict_disease(image)
+    with st.spinner(
+        "🧠 AI is analysing the crop leaf..."
+    ):
+
+        try:
+
+            disease, confidence = predict_disease(
+                image
+            )
+
+        except Exception as e:
+
+            st.error(
+                "❌ Disease prediction failed."
+            )
+
+            st.exception(e)
+
+            st.stop()
+
+
+    # ========================================================
+    # NORMALIZE VALUES
+    # ========================================================
+
+    disease = str(disease)
+
+    confidence = float(confidence)
 
     disease_lower = disease.lower()
+
+
+    # ========================================================
+    # FARM HEALTH SCORE
+    # ========================================================
 
     if "healthy" in disease_lower:
 
         farm_health = 100
+
         severity = "🟢 Healthy"
+
         risk = "Very Low"
 
     elif confidence >= 95:
 
-        farm_health = 35
+        farm_health = 40
+
         severity = "🔴 Critical"
+
         risk = "Very High"
 
     elif confidence >= 85:
 
-        farm_health = 55
+        farm_health = 60
+
         severity = "🟠 Severe"
+
         risk = "High"
 
     elif confidence >= 70:
 
-        farm_health = 72
+        farm_health = 75
+
         severity = "🟡 Moderate"
+
         risk = "Medium"
 
     else:
 
         farm_health = 85
-        severity = "🟢 Mild"
+
+        severity = "🟢 Low Confidence"
+
         risk = "Low"
 
-    save_prediction("disease", disease)
-    save_prediction("confidence", confidence)
-    save_prediction("farm_health", farm_health)
 
-    save_disease(
-        current_farmer(),
-        disease,
+    # ========================================================
+    # SAVE SESSION DATA
+    # ========================================================
+
+    save_prediction(
+        "disease",
+        disease
+    )
+
+    save_prediction(
+        "confidence",
         confidence
     )
 
-    save_memory(
-        farmer_id=current_farmer(),
-        disease=disease,
-        confidence=confidence,
-        farm_health=farm_health
+    save_prediction(
+        "farm_health",
+        farm_health
     )
 
-    st.success("✅ AI Diagnosis Completed Successfully")
-        st.divider()
 
-    # ============================================================
-    # RESULT METRICS
-    # ============================================================
+    # ========================================================
+    # SAVE TO PREDICTION DATABASE
+    # ========================================================
+
+    try:
+
+        save_disease(
+            farmer_id,
+            disease,
+            confidence
+        )
+
+    except Exception as e:
+
+        st.warning(
+            f"⚠️ Prediction generated but database save failed: {e}"
+        )
+
+
+    # ========================================================
+    # SAVE TO FARMER MEMORY
+    # ========================================================
+
+    try:
+
+        save_memory(
+            farmer_id=farmer_id,
+            crop=crop,
+            soil=soil_type,
+            disease=disease,
+            confidence=confidence,
+            farm_health=farm_health
+        )
+
+    except Exception as e:
+
+        st.warning(
+            f"⚠️ Farmer memory update failed: {e}"
+        )
+
+
+    # ========================================================
+    # SUCCESS
+    # ========================================================
+
+    st.success(
+        "✅ AI Disease Diagnosis Completed Successfully"
+    )
+
+
+    st.divider()
+
+
+    # ========================================================
+    # DIAGNOSIS SUMMARY
+    # ========================================================
 
     st.subheader("📊 AI Diagnosis Summary")
 
-    m1, m2, m3, m4 = st.columns(4)
 
-    m1.metric(
-        "Disease",
-        disease.replace("_", " ")
-    )
+    r1, r2, r3, r4 = st.columns(4)
 
-    m2.metric(
-        "Confidence",
-        f"{confidence:.2f}%"
-    )
 
-    m3.metric(
-        "Farm Health",
-        f"{farm_health}/100"
-    )
+    with r1:
 
-    m4.metric(
-        "Risk Level",
-        risk
-    )
+        st.metric(
+            "🌿 Disease",
+            disease.replace("_", " ")
+        )
 
-    # ============================================================
-    # CONFIDENCE BAR
-    # ============================================================
+
+    with r2:
+
+        st.metric(
+            "🎯 Confidence",
+            f"{confidence:.2f}%"
+        )
+
+
+    with r3:
+
+        st.metric(
+            "🌱 Farm Health",
+            f"{farm_health}/100"
+        )
+
+
+    with r4:
+
+        st.metric(
+            "🚨 Risk",
+            risk
+        )
+
+
+    # ========================================================
+    # CONFIDENCE
+    # ========================================================
 
     st.divider()
 
     st.subheader("🎯 Prediction Confidence")
 
-    st.progress(confidence / 100)
+
+    confidence_value = max(
+        0.0,
+        min(
+            confidence / 100,
+            1.0
+        )
+    )
+
+
+    st.progress(
+        confidence_value
+    )
+
 
     if confidence >= 95:
 
-        st.success("Very high confidence prediction.")
+        st.success(
+            "Very high confidence prediction."
+        )
 
     elif confidence >= 85:
 
-        st.info("High confidence prediction.")
+        st.info(
+            "High confidence prediction."
+        )
 
     elif confidence >= 70:
 
-        st.warning("Moderate confidence. Consider uploading another clear image for verification.")
+        st.warning(
+            "Moderate confidence. Upload another clear image "
+            "if you want additional verification."
+        )
 
     else:
 
-        st.error("Low confidence prediction. Capture a clearer image under good lighting.")
+        st.error(
+            "Low confidence prediction. Capture a clearer "
+            "image with better lighting."
+        )
 
-    # ============================================================
-    # FARM HEALTH DASHBOARD
-    # ============================================================
+
+    # ========================================================
+    # FARM HEALTH
+    # ========================================================
 
     st.divider()
 
-    left, right = st.columns(2)
+    health_col1, health_col2 = st.columns(2)
 
-    with left:
+
+    with health_col1:
 
         st.subheader("🌱 Farm Health")
 
-        st.progress(farm_health / 100)
+        st.progress(
+            farm_health / 100
+        )
 
         st.metric(
             "Health Score",
             f"{farm_health}/100"
         )
 
-    with right:
+
+    with health_col2:
 
         st.subheader("🚨 Disease Severity")
 
-        st.markdown(f"## {severity}")
+        st.markdown(
+            f"### {severity}"
+        )
 
-        st.write(f"Estimated Risk Level : **{risk}**")
+        st.write(
+            f"Estimated risk: **{risk}**"
+        )
 
-    # ============================================================
-    # TREATMENT & PREVENTION
-    # ============================================================
+
+    # ========================================================
+    # DISEASE INFORMATION
+    # ========================================================
 
     st.divider()
+
+    st.subheader(
+        "💊 Treatment & Prevention"
+    )
+
 
     if disease in DISEASE_INFO:
 
         info = DISEASE_INFO[disease]
 
-        t1, t2 = st.columns(2)
 
-        with t1:
+        treatment_col, prevention_col = st.columns(2)
 
-            st.subheader("💊 Recommended Treatment")
 
-            st.success(info["Treatment"])
+        with treatment_col:
 
-        with t2:
+            st.markdown(
+                "### 💊 Recommended Treatment"
+            )
 
-            st.subheader("🛡 Prevention")
+            st.info(
+                info.get(
+                    "Treatment",
+                    "No treatment information available."
+                )
+            )
 
-            st.info(info["Prevention"])
+
+        with prevention_col:
+
+            st.markdown(
+                "### 🛡 Prevention"
+            )
+
+            st.success(
+                info.get(
+                    "Prevention",
+                    "No prevention information available."
+                )
+            )
+
 
     else:
 
         st.warning(
-            "Treatment information is not available for this disease."
+            "No detailed treatment information is currently "
+            "available for this prediction."
         )
 
-    # ============================================================
+
+    # ========================================================
     # AI RECOMMENDATIONS
-    # ============================================================
+    # ========================================================
 
     st.divider()
 
-    st.subheader("🤖 AI Recommendations")
+    st.subheader(
+        "🤖 Recommended Actions"
+    )
 
-    recommendations = []
 
     if "healthy" in disease_lower:
 
-        recommendations.extend([
-            "Continue current crop management practices.",
-            "Maintain balanced fertilization.",
-            "Monitor crop weekly.",
-            "Keep irrigation schedule consistent."
-        ])
+        recommendations = [
+
+            "Continue the current crop management practices.",
+
+            "Maintain balanced irrigation and fertilization.",
+
+            "Regularly inspect the crop for early symptoms.",
+
+            "Maintain good field hygiene.",
+
+            "Run another diagnosis if new symptoms appear."
+
+        ]
 
     else:
 
-        recommendations.extend([
-            "Start treatment immediately.",
+        recommendations = [
+
             "Inspect nearby plants for similar symptoms.",
-            "Remove severely infected leaves.",
-            "Avoid overhead irrigation until recovery.",
-            "Monitor crop every 2–3 days.",
-            "Capture another image after treatment to compare improvement."
-        ])
 
-    for i, rec in enumerate(recommendations, start=1):
+            "Separate or remove severely affected plant material "
+            "where appropriate.",
 
-        st.write(f"✅ {i}. {rec}")
+            "Follow the recommended treatment guidance.",
 
-    # ============================================================
+            "Avoid unnecessary overhead irrigation.",
+
+            "Monitor the crop every 2–3 days.",
+
+            "Repeat the AI diagnosis after treatment to compare "
+            "the plant condition."
+
+        ]
+
+
+    for number, recommendation in enumerate(
+        recommendations,
+        start=1
+    ):
+
+        st.write(
+            f"**{number}.** {recommendation}"
+        )
+
+
+    # ========================================================
     # NEXT ACTIONS
-    # ============================================================
+    # ========================================================
 
     st.divider()
 
-    st.subheader("📌 Recommended Next Steps")
+    st.subheader(
+        "📌 Continue Your Farm Analysis"
+    )
 
-    n1, n2, n3 = st.columns(3)
 
-    with n1:
+    action1, action2, action3 = st.columns(3)
 
-        st.info(
-            """
-### 🌾 Fertilizer
 
-Open the Fertilizer Recommendation module to identify the most suitable fertilizer.
-"""
-        )
-
-    with n2:
+    with action1:
 
         st.info(
             """
-### 📈 Yield Prediction
+**🧪 Fertilizer Recommendation**
 
-Estimate production, expected revenue and profitability.
+Use your farm profile and crop information to determine suitable nutrient management.
 """
         )
 
-    with n3:
+
+    with action2:
 
         st.info(
             """
-### 🤖 AI Advisor
+**🌾 Yield Prediction**
 
-Ask questions about this disease, treatment and government schemes.
+Estimate expected yield, production and potential revenue.
 """
         )
 
-    # ============================================================
-    # FINAL STATUS
-    # ============================================================
+
+    with action3:
+
+        st.info(
+            """
+**🤖 Smart AI Advisor**
+
+Ask questions about disease management, weather, schemes and your farm.
+"""
+        )
+
+
+    # ========================================================
+    # MEMORY STATUS
+    # ========================================================
 
     st.divider()
 
-    st.success("🌿 Disease analysis has been successfully saved to your Smart Farm Profile.")
+    st.success(
+        "🧠 This diagnosis has been added to your Farmer AI Memory."
+    )
 
-    st.balloons()
+
+# ============================================================
+# INFORMATION FOOTER
+# ============================================================
+
+st.divider()
+
+st.caption(
+    "🌾 Smart Agri AI • AI-powered crop disease analysis • "
+    "Always verify serious disease diagnoses with a qualified "
+    "agriculture professional."
+)

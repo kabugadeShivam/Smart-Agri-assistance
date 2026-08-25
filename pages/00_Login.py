@@ -1,104 +1,256 @@
 import streamlit as st
 
-from utils.profile_manager import register_farmer, login
-from utils.auth import login_user, is_logged_in
+from utils.auth import (
+    authenticate,
+    is_logged_in,
+    current_farmer,
+    logout
+)
 
-# =====================================================
-# Page Config
-# =====================================================
+from utils.database import register_farmer
+
+
+# ============================================================
+# PAGE CONFIG
+# ============================================================
 
 st.set_page_config(
     page_title="Smart Agri AI",
     page_icon="🌾",
-    layout="wide"
+    layout="centered"
 )
 
-# Already logged in
+
+# ============================================================
+# CUSTOM CSS
+# ============================================================
+
+st.markdown(
+    """
+    <style>
+
+    .main-title {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #6b7280;
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .feature {
+        padding: 15px;
+        border-radius: 12px;
+        background: #f5f7f5;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+# ============================================================
+# LOGGED-IN USER
+# ============================================================
+
 if is_logged_in():
 
-    st.success(f"Welcome back, {st.session_state.farmer_name} 👋")
+    st.markdown(
+        '<div class="main-title">🌾 Smart Agri AI</div>',
+        unsafe_allow_html=True
+    )
 
-    st.switch_page("pages/02_Dashboard.py")
+    st.markdown(
+        '<div class="subtitle">AI-powered digital farming assistant</div>',
+        unsafe_allow_html=True
+    )
 
-# =====================================================
-# Header
-# =====================================================
+    st.success(
+        f"👨‍🌾 Logged in as Farmer: {current_farmer()}"
+    )
 
-st.markdown("""
-# 🌾 Smart Agri AI Platform
+    st.divider()
 
-### Intelligent Farming • AI Advisor • Market Intelligence • Government Schemes
-""")
+    st.info(
+        """
+        Your Smart Agri AI system is ready.
+
+        🌿 Disease Detection  
+        🧪 Fertilizer Recommendation  
+        🌾 Yield Prediction  
+        🌦 Weather Analysis  
+        🏛 Government Schemes  
+        📈 Market Intelligence  
+        🤖 AI Farm Advisor
+        """
+    )
+
+    if st.button(
+        "🚪 Logout",
+        use_container_width=True,
+        key="logout_button"
+    ):
+
+        logout()
+
+        st.success(
+            "You have been logged out."
+        )
+
+        st.rerun()
+
+    st.stop()
+
+
+# ============================================================
+# HEADER
+# ============================================================
+
+st.markdown(
+    '<div class="main-title">🌾 Smart Agri AI</div>',
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    '<div class="subtitle">Your intelligent digital farming assistant</div>',
+    unsafe_allow_html=True
+)
+
+
+# ============================================================
+# FEATURES
+# ============================================================
+
+c1, c2, c3 = st.columns(3)
+
+with c1:
+
+    st.markdown(
+        """
+        <div class="feature">
+        🌿<br>
+        <b>Disease AI</b><br>
+        Detect crop diseases
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+with c2:
+
+    st.markdown(
+        """
+        <div class="feature">
+        🌾<br>
+        <b>Yield AI</b><br>
+        Predict crop production
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+with c3:
+
+    st.markdown(
+        """
+        <div class="feature">
+        🏛<br>
+        <b>Government Schemes</b><br>
+        Find eligible schemes
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 
 st.divider()
 
-left, right = st.columns([1.2, 1])
 
-# =====================================================
-# Left Side
-# =====================================================
+# ============================================================
+# LOGIN / REGISTER
+# ============================================================
 
-with left:
+login_tab, register_tab = st.tabs(
+    [
+        "🔐 Login",
+        "📝 Register"
+    ]
+)
 
-    st.image(
-        "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=900",
-        use_container_width=True
+
+# ============================================================
+# LOGIN
+# ============================================================
+
+with login_tab:
+
+    st.subheader("🔐 Farmer Login")
+
+    mobile = st.text_input(
+        "📱 Mobile Number",
+        max_chars=10,
+        key="login_mobile"
     )
 
-    st.markdown("## Why Smart Agri AI?")
+    password = st.text_input(
+        "🔑 Password",
+        type="password",
+        key="login_password"
+    )
 
-    st.success("🌱 Disease Detection")
+    if st.button(
+        "🚀 Login",
+        use_container_width=True,
+        key="login_button"
+    ):
 
-    st.success("🌾 Yield Prediction")
+        if not mobile.strip():
 
-    st.success("🏛 Government Scheme Matching")
+            st.warning(
+                "Please enter your mobile number."
+            )
 
-    st.success("📈 Market Intelligence")
+        elif not password.strip():
 
-    st.success("🤖 AI Agriculture Advisor")
+            st.warning(
+                "Please enter your password."
+            )
 
-    st.success("📄 AI Farm Reports")
+        elif not mobile.isdigit():
 
-# =====================================================
-# Right Side
-# =====================================================
+            st.warning(
+                "Mobile number must contain digits only."
+            )
 
-with right:
+        elif len(mobile) != 10:
 
-    tabs = st.tabs(["🔐 Login", "📝 Register"])
+            st.warning(
+                "Mobile number must contain exactly 10 digits."
+            )
 
-    # =====================================================
-    # LOGIN
-    # =====================================================
+        else:
 
-    with tabs[0]:
+            try:
 
-        st.subheader("Farmer Login")
+                success = authenticate(
+                    mobile,
+                    password
+                )
 
-        login_mobile = st.text_input(
-            "📱 Mobile Number",
-            max_chars=10
-        )
-
-        if st.button(
-            "Login",
-            use_container_width=True
-        ):
-
-            if len(login_mobile) != 10 or not login_mobile.isdigit():
-
-                st.error("Enter a valid 10-digit mobile number.")
-
-            else:
-
-                farmer = login(login_mobile)
-
-                if farmer:
-
-                    login_user(farmer)
+                if success:
 
                     st.success(
-                        f"Welcome {farmer['farmer_name']} 🌾"
+                        "✅ Login successful!"
                     )
 
                     st.rerun()
@@ -106,64 +258,272 @@ with right:
                 else:
 
                     st.error(
-                        "Farmer not found. Please register first."
+                        "❌ Invalid mobile number or password."
                     )
 
-    # =====================================================
-    # REGISTER
-    # =====================================================
+            except Exception as e:
 
-    with tabs[1]:
+                st.error(
+                    f"❌ Login error: {e}"
+                )
 
-        st.subheader("New Farmer Registration")
 
-        name = st.text_input(
-            "👤 Full Name"
-        )
+# ============================================================
+# REGISTRATION
+# ============================================================
 
-        mobile = st.text_input(
-            "📱 Mobile Number",
-            max_chars=10
-        )
+with register_tab:
 
-        if st.button(
-            "Register",
-            use_container_width=True
-        ):
+    st.subheader("📝 Create Farmer Account")
 
-            if name == "":
+    name = st.text_input(
+        "👨‍🌾 Farmer Name",
+        key="register_name"
+    )
 
-                st.warning("Please enter your name.")
+    register_mobile = st.text_input(
+        "📱 Mobile Number",
+        max_chars=10,
+        key="register_mobile"
+    )
 
-            elif len(mobile) != 10 or not mobile.isdigit():
+    register_password = st.text_input(
+        "🔐 Password",
+        type="password",
+        key="register_password"
+    )
 
-                st.warning("Please enter a valid mobile number.")
+    confirm_password = st.text_input(
+        "🔐 Confirm Password",
+        type="password",
+        key="register_confirm_password"
+    )
 
-            else:
+    st.markdown("### 🌱 Farm Information")
 
-                try:
+    state = st.text_input(
+        "📍 State",
+        key="register_state"
+    )
 
-                    farmer_id = register_farmer(
-                        name=name,
-                        mobile=mobile
-                    )
+    district = st.text_input(
+        "🏙 District",
+        key="register_district"
+    )
+
+    village = st.text_input(
+        "🏡 Village",
+        key="register_village"
+    )
+
+    crop = st.text_input(
+        "🌾 Main Crop",
+        key="register_crop"
+    )
+
+    land_area = st.number_input(
+        "📐 Land Area (hectares)",
+        min_value=0.0,
+        max_value=5000.0,
+        value=1.0,
+        step=0.1,
+        key="register_land_area"
+    )
+
+    soil_type = st.selectbox(
+        "🌱 Soil Type",
+        [
+            "Black Soil",
+            "Red Soil",
+            "Alluvial Soil",
+            "Laterite Soil",
+            "Sandy Soil",
+            "Loamy Soil",
+            "Other"
+        ],
+        key="register_soil_type"
+    )
+
+    irrigation = st.selectbox(
+        "💧 Irrigation",
+        [
+            "Rainfed",
+            "Drip",
+            "Sprinkler",
+            "Canal",
+            "Borewell",
+            "Other"
+        ],
+        key="register_irrigation"
+    )
+
+    farming_type = st.selectbox(
+        "🚜 Farming Type",
+        [
+            "Conventional",
+            "Organic",
+            "Mixed"
+        ],
+        key="register_farming_type"
+    )
+
+    age = st.number_input(
+        "🎂 Age",
+        min_value=18,
+        max_value=100,
+        value=30,
+        step=1,
+        key="register_age"
+    )
+
+    gender = st.selectbox(
+        "Gender",
+        [
+            "Male",
+            "Female",
+            "Other"
+        ],
+        key="register_gender"
+    )
+
+    annual_income = st.number_input(
+        "💰 Annual Farm Income (₹)",
+        min_value=0.0,
+        max_value=100000000.0,
+        value=100000.0,
+        step=10000.0,
+        key="register_income"
+    )
+
+    fpo_member = st.selectbox(
+        "🤝 FPO Member?",
+        [
+            "Yes",
+            "No"
+        ],
+        key="register_fpo"
+    )
+
+    if st.button(
+        "🌱 Create Farmer Account",
+        use_container_width=True,
+        key="register_button"
+    ):
+
+        if not name.strip():
+
+            st.warning(
+                "Please enter farmer name."
+            )
+
+        elif not register_mobile.strip():
+
+            st.warning(
+                "Please enter mobile number."
+            )
+
+        elif not register_mobile.isdigit():
+
+            st.warning(
+                "Mobile number must contain digits only."
+            )
+
+        elif len(register_mobile) != 10:
+
+            st.warning(
+                "Mobile number must contain exactly 10 digits."
+            )
+
+        elif not register_password.strip():
+
+            st.warning(
+                "Please enter a password."
+            )
+
+        elif len(register_password) < 4:
+
+            st.warning(
+                "Password should contain at least 4 characters."
+            )
+
+        elif register_password != confirm_password:
+
+            st.error(
+                "❌ Passwords do not match."
+            )
+
+        else:
+
+            try:
+
+                farmer_id = register_farmer(
+
+                    farmer_name=name.strip(),
+
+                    mobile=register_mobile,
+
+                    password=register_password,
+
+                    state=state.strip(),
+
+                    district=district.strip(),
+
+                    village=village.strip(),
+
+                    crop=crop.strip(),
+
+                    land_area=land_area,
+
+                    soil_type=soil_type,
+
+                    irrigation=irrigation,
+
+                    farming_type=farming_type,
+
+                    age=age,
+
+                    gender=gender,
+
+                    annual_income=annual_income,
+
+                    fpo_member=fpo_member
+
+                )
+
+                if farmer_id:
 
                     st.success(
-                        f"""
-Registration Successful 🎉
-
-Farmer ID : {farmer_id}
-
-Please login using your mobile number.
-"""
+                        "✅ Farmer account created successfully!"
                     )
 
-                except Exception as e:
+                    st.info(
+                        f"🆔 Your Farmer ID is: **{farmer_id}**"
+                    )
 
-                    st.error(str(e))
+                    st.info(
+                        "You can now go to the Login tab."
+                    )
+
+                else:
+
+                    st.error(
+                        "❌ Registration failed. "
+                        "This mobile number may already be registered."
+                    )
+
+            except Exception as e:
+
+                st.error(
+                    f"❌ Registration error: {e}"
+                )
+
+
+# ============================================================
+# FOOTER
+# ============================================================
 
 st.divider()
 
 st.caption(
-    "© 2026 Smart Agri AI Platform | AI Powered Decision Support for Indian Farmers 🇮🇳"
+    "🌾 Smart Agri AI | AI-powered agriculture decision support system"
 )

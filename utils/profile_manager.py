@@ -1,272 +1,231 @@
 from utils.database import get_connection
 
 
-# =====================================================
-# Register Farmer
-# =====================================================
-
-def register_farmer(
-    name,
-    mobile,
-    state="",
-    district="",
-    village="",
-    crop="",
-    land_area=0,
-    soil_type="",
-    irrigation="",
-    farming_type="",
-    age=0,
-    gender="",
-    annual_income=0,
-    fpo_member="No"
-):
-
-    conn = get_connection()
-    cursor = conn.cursor()
-
-    # Prevent duplicate mobile numbers
-    cursor.execute(
-        "SELECT farmer_id FROM farmer_profile WHERE mobile=?",
-        (mobile,)
-    )
-
-    existing = cursor.fetchone()
-
-    if existing:
-        conn.close()
-        raise Exception("Mobile number already registered.")
-
-    cursor.execute(
-        """
-        INSERT INTO farmer_profile(
-
-            farmer_name,
-            mobile,
-            state,
-            district,
-            village,
-            crop,
-            land_area,
-            soil_type,
-            irrigation,
-            farming_type,
-            age,
-            gender,
-            annual_income,
-            fpo_member
-
-        )
-
-        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-        """,
-        (
-            name,
-            mobile,
-            state,
-            district,
-            village,
-            crop,
-            land_area,
-            soil_type,
-            irrigation,
-            farming_type,
-            age,
-            gender,
-            annual_income,
-            fpo_member,
-        ),
-    )
-
-    conn.commit()
-
-    farmer_id = cursor.lastrowid
-
-    conn.close()
-
-    return farmer_id
-
-
-# =====================================================
-# Login
-# =====================================================
-
-def login(mobile):
-
-    conn = get_connection()
-    cursor = conn.cursor()
-
-    cursor.execute(
-        """
-        SELECT *
-        FROM farmer_profile
-        WHERE mobile=?
-        """,
-        (mobile,),
-    )
-
-    farmer = cursor.fetchone()
-
-    conn.close()
-
-    return farmer
-
-
-# =====================================================
-# Get Farmer Profile
-# =====================================================
+# ============================================================
+# GET FARMER PROFILE
+# ============================================================
 
 def get_profile(farmer_id):
+    """
+    Fetch the complete farmer profile
+    from the existing farmers table.
+    """
+
+    if not farmer_id:
+        return {}
 
     conn = get_connection()
-    cursor = conn.cursor()
 
-    cursor.execute(
-        """
-        SELECT *
-        FROM farmer_profile
-        WHERE farmer_id=?
-        """,
-        (farmer_id,),
-    )
+    try:
+        cursor = conn.cursor()
 
-    profile = cursor.fetchone()
+        cursor.execute(
+            """
+            SELECT *
+            FROM farmers
+            WHERE farmer_id = ?
+            LIMIT 1
+            """,
+            (farmer_id,)
+        )
 
-    conn.close()
+        row = cursor.fetchone()
 
-    return profile
+        if row is None:
+            return {}
+
+        return dict(row)
+
+    finally:
+        conn.close()
 
 
-# =====================================================
-# Update Farmer Profile
-# =====================================================
+# ============================================================
+# SAVE / UPDATE FARMER PROFILE
+# ============================================================
 
-def update_profile(
-    farmer_id,
-    state,
-    district,
-    village,
-    crop,
-    land_area,
-    soil_type,
-    irrigation,
-    farming_type,
-    age,
-    gender,
-    annual_income,
-    fpo_member,
-):
+def update_profile(farmer_id, **fields):
+    """
+    Update selected farmer profile fields.
 
-    conn = get_connection()
-    cursor = conn.cursor()
+    Example:
 
-    cursor.execute(
-        """
-        UPDATE farmer_profile
-
-        SET
-
-            state=?,
-            district=?,
-            village=?,
-            crop=?,
-            land_area=?,
-            soil_type=?,
-            irrigation=?,
-            farming_type=?,
-            age=?,
-            gender=?,
-            annual_income=?,
-            fpo_member=?
-
-        WHERE farmer_id=?
-        """,
-        (
-            state,
-            district,
-            village,
-            crop,
-            land_area,
-            soil_type,
-            irrigation,
-            farming_type,
-            age,
-            gender,
-            annual_income,
-            fpo_member,
+        update_profile(
             farmer_id,
+            crop="Rice",
+            land_area=5
+        )
+    """
+
+    if not farmer_id:
+        return False
+
+    if not fields:
+        return False
+
+    # Security: only allow actual farmer-profile columns.
+    allowed_fields = {
+        "farmer_name",
+        "mobile",
+        "state",
+        "district",
+        "village",
+        "crop",
+        "land_area",
+        "soil_type",
+        "irrigation",
+        "farming_type",
+        "age",
+        "gender",
+        "annual_income",
+        "fpo_member",
+    }
+
+    clean_fields = {
+        key: value
+        for key, value in fields.items()
+        if key in allowed_fields
+    }
+
+    if not clean_fields:
+        return False
+
+    conn = get_connection()
+
+    try:
+        cursor = conn.cursor()
+
+        set_clause = ", ".join(
+            f"{key} = ?"
+            for key in clean_fields
+        )
+
+        values = list(clean_fields.values())
+        values.append(farmer_id)
+
+        query = f"""
+            UPDATE farmers
+            SET {set_clause}
+            WHERE farmer_id = ?
+        """
+
+        cursor.execute(query, values)
+
+        conn.commit()
+
+        return cursor.rowcount > 0
+
+    finally:
+        conn.close()
+
+
+# ============================================================
+# REFRESH PROFILE
+# ============================================================
+
+def refresh_profile(farmer_id):
+    """
+    Fetch latest profile data from database.
+    """
+
+    return get_profile(farmer_id)
+
+
+# ============================================================
+# PROFILE EXISTS
+# ============================================================
+
+def profile_exists(farmer_id):
+    """
+    Check whether a farmer profile exists.
+    """
+
+    if not farmer_id:
+        return False
+
+    conn = get_connection()
+
+    try:
+        cursor = conn.cursor()
+
+        cursor.execute(
+            """
+            SELECT 1
+            FROM farmers
+            WHERE farmer_id = ?
+            LIMIT 1
+            """,
+            (farmer_id,)
+        )
+
+        return cursor.fetchone() is not None
+
+    finally:
+        conn.close()
+
+
+# ============================================================
+# GET PROFILE FIELD
+# ============================================================
+
+def get_profile_field(
+    farmer_id,
+    field,
+    default=None
+):
+    """
+    Get one specific field from farmer profile.
+    """
+
+    profile = get_profile(farmer_id)
+
+    if not profile:
+        return default
+
+    return profile.get(
+        field,
+        default
+    )
+
+
+# ============================================================
+# FARM PROFILE SUMMARY
+# ============================================================
+
+def profile_summary(farmer_id):
+    """
+    Return a clean summary useful for
+    AI recommendations and Home page.
+    """
+
+    profile = get_profile(farmer_id)
+
+    if not profile:
+        return {}
+
+    return {
+        "farmer_id": profile.get("farmer_id"),
+        "farmer_name": profile.get("farmer_name"),
+        "mobile": profile.get("mobile"),
+
+        "state": profile.get("state"),
+        "district": profile.get("district"),
+        "village": profile.get("village"),
+
+        "crop": profile.get("crop"),
+        "land_area": profile.get("land_area"),
+        "soil_type": profile.get("soil_type"),
+        "irrigation": profile.get("irrigation"),
+        "farming_type": profile.get("farming_type"),
+
+        "age": profile.get("age"),
+        "gender": profile.get("gender"),
+
+        "annual_income": profile.get(
+            "annual_income"
         ),
-    )
 
-    conn.commit()
-    conn.close()
-
-
-# =====================================================
-# Get Farmer By Mobile
-# =====================================================
-
-def get_farmer_by_mobile(mobile):
-
-    conn = get_connection()
-    cursor = conn.cursor()
-
-    cursor.execute(
-        """
-        SELECT *
-        FROM farmer_profile
-        WHERE mobile=?
-        """,
-        (mobile,),
-    )
-
-    farmer = cursor.fetchone()
-
-    conn.close()
-
-    return farmer
-
-
-# =====================================================
-# Get All Farmers (Admin/Future Use)
-# =====================================================
-
-def get_all_farmers():
-
-    conn = get_connection()
-    cursor = conn.cursor()
-
-    cursor.execute(
-        """
-        SELECT *
-        FROM farmer_profile
-        ORDER BY farmer_id DESC
-        """
-    )
-
-    farmers = cursor.fetchall()
-
-    conn.close()
-
-    return farmers
-
-
-# =====================================================
-# Delete Farmer
-# =====================================================
-
-def delete_farmer(farmer_id):
-
-    conn = get_connection()
-    cursor = conn.cursor()
-
-    cursor.execute(
-        """
-        DELETE FROM farmer_profile
-        WHERE farmer_id=?
-        """,
-        (farmer_id,),
-    )
-
-    conn.commit()
-    conn.close()
+        "fpo_member": profile.get(
+            "fpo_member"
+        ),
+    }
