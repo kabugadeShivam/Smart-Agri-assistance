@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+pillow
+requests
+python-dotenv
+google-genai
+tensorflow
+faiss-cpu
+sentence-transformers
