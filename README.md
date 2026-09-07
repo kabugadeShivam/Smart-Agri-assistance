@@ -1,6 +1,6 @@
 # 🌾 Smart Agriculture AI
 
-An AI-powered Smart Agriculture Assistant built with **Python** and **Streamlit** to help farmers make better agricultural decisions using data-driven recommendations.
+An AI-powered **Smart Agriculture Assistant** built with Python and Streamlit to support farmers with crop, fertilizer, disease, yield, weather and government-scheme assistance.
 
 ## 🚀 Live Demo
 
@@ -8,35 +8,70 @@ An AI-powered Smart Agriculture Assistant built with **Python** and **Streamlit*
 
 👉 **[Open Smart Agriculture AI](https://smart-agri-assistance.streamlit.app)**
 
-> If your Streamlit deployment uses a different URL, replace the link above with your actual deployed app URL.
+## ✨ Main Features
 
-## ✨ Features
-
-- 🌱 Smart agriculture assistance
-- 🤖 AI/ML-based agricultural recommendations
-- 📊 Data-driven analysis
-- 🌾 Farmer-focused decision support
-- 🖥️ Interactive Streamlit interface
+- 👨‍🌾 Farmer registration and profile management
+- 🌾 Fertilizer recommendation using a trained ML model
+- 🌿 AI plant disease detection from leaf images
+- 📈 Crop yield prediction
+- 🌦️ Weather-assisted recommendations
+- 🤖 AI advisor and chatbot
+- 🏛️ Government scheme matching
+- 📊 Prediction history and dashboard
 
 ## 🛠️ Tech Stack
 
 - **Python**
 - **Streamlit**
-- **Pandas**
+- **Pandas / NumPy**
 - **Scikit-learn**
-- **Machine Learning**
+- **TensorFlow / Keras**
+- **SQLite**
+- **Joblib**
 
 ## 📁 Project Structure
 
 ```text
 Smart-Agri-assistance/
-├── app.py
-├── pages/
-├── models/
-├── data/
-├── requirements.txt
+│
+├── app.py                         # Streamlit entry point
+├── pages/                         # Streamlit application pages
+│   ├── 00_Login.py
+│   ├── 1_Home.py
+│   ├── 2_Prediction.py
+│   ├── 4_Model_Analysis.py
+│   ├── 5_History.py
+│   ├── 6_About.py
+│   ├── 8_Disease_Detection.py
+│   ├── 9_Yield_Prediction.py
+│   ├── 10_AI_Advisor.py
+│   ├── 11_AI_Chatbot.py
+│   └── 12_Government_Scheme_Matcher.py
+│
+├── utils/                        # Shared application logic
+│   ├── auth.py
+│   ├── database.py
+│   ├── disease_predict.py
+│   ├── disease_info.py
+│   ├── yield_predict.py
+│   ├── farmer_memory.py
+│   └── ...
+│
+├── models/                       # Trained ML/DL models
+│   ├── best_random_forest.pkl
+│   ├── plant_disease_model.keras
+│   └── yield_prediction_model.pkl
+│
+├── database/                     # Database initialization code
+│   └── init_db.py
+│
+├── agriculture_knowledge.csv     # Agriculture knowledge base
+├── requirements.txt              # Python dependencies
+├── .gitignore                    # Local/cache/secrets exclusions
 └── README.md
 ```
+
+> Training-only datasets, local databases, cache files, duplicate pages and temporary test scripts are intentionally excluded from the repository.
 
 ## ▶️ Run Locally
 
@@ -47,11 +82,9 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The application will open in your browser at the local Streamlit address.
-
 ## 🎯 Objective
 
-The goal of Smart Agriculture AI is to use artificial intelligence and machine learning to provide useful, accessible, and data-driven agricultural assistance to farmers.
+The project aims to make practical agricultural intelligence accessible through a simple web application, combining machine learning, computer vision, farmer profiles and AI-assisted recommendations.
 
 ## 👨‍💻 Developer
 
